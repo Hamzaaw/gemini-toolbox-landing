@@ -5,18 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gemini Toolbox - Ultimate Chrome Extension for Gemini</title>
     <meta name="description" content="Get early access to the all-in-one Gemini Toolbox Chrome Extension. Features chat folders, PDF exports, bulk deletion, and voice modes. Join the free beta!">
-    <meta name="keywords" content="Gemini Toolbox, Chrome Extension, Gemini PDF, Gemini Bulk Delete, Chat Folders, Voice Modes">
+    <meta name="keywords" content="Gemini Toolbox, Chrome Extension, Gemini PDF, Gemini Bulk Delete, Chat Folders, Voice Modes, export gemini chat, save gemini conversation, gemini chat organizer, gemini productivity tools">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://geminitoolbox.com/">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="author" content="Gemini Toolbox">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="theme-color" content="#1A73E8">
     
     <!-- Open Graph -->
     <meta property="og:title" content="Gemini Toolbox - Ultimate Chrome Extension for Gemini">
     <meta property="og:description" content="Stop juggling separate tools. Get folders, PDF exports, bulk deletion, and more—all in one powerful extension.">
-    <meta property="og:url" content="https://geminitoolbox.com">
+    <meta property="og:url" content="https://geminitoolbox.com/">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://geminitoolbox.com/images/slide1.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Gemini Toolbox">
+    <meta property="og:locale" content="en_US">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Gemini Toolbox - Ultimate Chrome Extension">
     <meta name="twitter:description" content="Get early access to the all-in-one Gemini Toolbox Chrome Extension. Join the free beta!">
+    <meta name="twitter:image" content="https://geminitoolbox.com/images/slide1.png">
+    <meta name="twitter:site" content="@geminitoolbox">
+    <meta name="twitter:creator" content="@geminitoolbox">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,6 +43,77 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Gemini Toolbox",
+        "description": "All-in-one Chrome extension for Gemini. Features chat folders, PDF exports, bulk deletion, and voice modes.",
+        "applicationCategory": "BrowserApplication",
+        "operatingSystem": "Chrome",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.7",
+            "ratingCount": "20",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Gemini Toolbox",
+            "url": "https://geminitoolbox.com"
+        }
+    }
+    </script>
+    
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How do I export Gemini chat to PDF?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Install Gemini Toolbox and click the 'Export Chat' button that appears in your Gemini sidebar. Select the chats you want to export and click 'Export to PDF'. Your chats will be formatted as clean, professional PDFs with clickable links and proper formatting."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How to delete multiple chats on Gemini at once?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "With Gemini Toolbox, click 'Bulk Delete' in the sidebar, select multiple chats using checkboxes (or 'Select All'), then click 'Delete Selected'. You can delete dozens or hundreds of chats in seconds instead of one-by-one."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How to add folders to organize Gemini chats?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "After installing Gemini Toolbox, click 'Manage Folders' in the sidebar. Create custom folders like 'Work', 'Personal', or 'Research', then drag and drop your chats to organize them. You can also search within folders and hide foldered chats from the main view."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is Gemini Toolbox safe and does it store my data?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, it's completely safe. All processing happens locally in your browser. We never see, store, or transmit your chat content. The extension only runs on gemini.google.com and requires minimal permissions. Your privacy is guaranteed."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Hero Section -->
@@ -41,22 +130,22 @@
             <div class="product-visual">
                 <div class="slideshow-container">
                     <div class="slide fade active">
-                        <img src="images/slide1.png" alt="Gemini Toolbox Interface">
+                        <img src="images/slide1.png" alt="Gemini Toolbox Chrome Extension interface showing sidebar with all features" width="800" height="450">
                     </div>
                     <div class="slide fade">
-                        <img src="images/slide2.png" alt="Gemini with Toolbox Sidebar">
+                        <img src="images/slide2.png" alt="Gemini AI chat interface with Toolbox sidebar integration" width="800" height="450" loading="lazy">
                     </div>
                     <div class="slide fade">
-                        <img src="images/slide3.png" alt="Smart Folder Organization">
+                        <img src="images/slide3.png" alt="Smart folder organization system for Gemini chats" width="800" height="450" loading="lazy">
                     </div>
                     <div class="slide fade">
-                        <img src="images/slide4.png" alt="Bulk Delete Feature">
+                        <img src="images/slide4.png" alt="Bulk delete feature for removing multiple Gemini chats at once" width="800" height="450" loading="lazy">
                     </div>
                     <div class="slide fade">
-                        <img src="images/slide5.png" alt="Prompt Library">
+                        <img src="images/slide5.png" alt="Prompt library for saving and reusing Gemini prompts" width="800" height="450" loading="lazy">
                     </div>
                     <div class="slide fade">
-                        <img src="images/slide6.png" alt="Export to PDF">
+                        <img src="images/slide6.png" alt="Export Gemini chats to PDF with clean formatting" width="800" height="450" loading="lazy">
                     </div>
                     
                     <!-- Navigation dots -->
@@ -96,8 +185,8 @@
                 </div>
                 <div class="trust-divider">•</div>
                 <div class="trust-stat">
-                    <img src="http://huzzler.so/assets/images/embeddable-badges/launch_arena_first_place.png" 
-                         alt="Award" 
+                    <img src="https://huzzler.so/assets/images/embeddable-badges/launch_arena_first_place.png" 
+                         alt="Huzzler Launch Arena First Place Award" 
                          style="height: 20px; opacity: 0.8; vertical-align: middle;">
                     Award-winning developer
                 </div>
@@ -230,20 +319,20 @@
         <div class="container">
             <div class="proof-strip">
                 <div class="proof-item">
-                    <img src="http://huzzler.so/assets/images/embeddable-badges/launch_arena_first_place.png" 
-                         alt="Award" class="proof-badge">
+                    <img src="https://huzzler.so/assets/images/embeddable-badges/launch_arena_first_place.png" 
+                         alt="Huzzler Launch Arena First Place Award" class="proof-badge">
                     <strong>Gemini to PDF</strong>
                     <span class="stars-inline">★★★★★</span> 4.7 (20+ reviews)
                     <a href="https://chromewebstore.google.com/detail/gemini-to-pdf/blndbnmpkgfoopgmcejnhdnepfejgipe" 
-                       target="_blank" class="store-link-inline">View on Chrome Store →</a>
+                       target="_blank" rel="noopener" class="store-link-inline">View on Chrome Store →</a>
                 </div>
                 <div class="proof-item">
-                    <img src="http://huzzler.so/assets/images/embeddable-badges/launch_arena_first_place.png" 
-                         alt="Award" class="proof-badge">
+                    <img src="https://huzzler.so/assets/images/embeddable-badges/launch_arena_first_place.png" 
+                         alt="Huzzler Launch Arena First Place Award" class="proof-badge">
                     <strong>Gemini Bulk Delete</strong>
                     <span class="stars-inline">★★★★★</span> 4.7 (20+ reviews)
                     <a href="https://chromewebstore.google.com/detail/gemini-bulk-delete/bdbdcppgiiidaolmadifdlceedoojpfh" 
-                       target="_blank" class="store-link-inline">View on Chrome Store →</a>
+                       target="_blank" rel="noopener" class="store-link-inline">View on Chrome Store →</a>
                 </div>
             </div>
         </div>

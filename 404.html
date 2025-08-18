@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - 404 | Gemini Toolbox</title>
+    <meta name="description" content="The page you're looking for doesn't exist. Return to Gemini Toolbox homepage.">
+    <meta name="robots" content="noindex, follow">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .error-container {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .error-code {
+            font-size: 120px;
+            font-weight: 900;
+            color: var(--primary);
+            margin: 0;
+            line-height: 1;
+        }
+        
+        .error-title {
+            font-size: 36px;
+            font-weight: 700;
+            margin: 24px 0 16px;
+            color: var(--text-primary);
+        }
+        
+        .error-description {
+            font-size: 18px;
+            color: var(--text-secondary);
+            max-width: 500px;
+            margin: 0 auto 32px;
+            line-height: 1.6;
+        }
+        
+        .error-actions {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .error-illustration {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 32px;
+            opacity: 0.5;
+        }
+        
+        .error-illustration svg {
+            width: 100%;
+            height: 100%;
+            color: var(--primary);
+        }
+        
+        .popular-pages {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid var(--border);
+            width: 100%;
+            max-width: 600px;
+        }
+        
+        .popular-pages h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+        
+        .popular-links {
+            display: grid;
+            gap: 12px;
+            text-align: left;
+        }
+        
+        .popular-link {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background: var(--surface-secondary);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: background-color 0.2s;
+        }
+        
+        .popular-link:hover {
+            background: var(--primary-light);
+        }
+        
+        .popular-link svg {
+            width: 20px;
+            height: 20px;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 80px;
+            }
+            
+            .error-title {
+                font-size: 28px;
+            }
+            
+            .error-description {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-illustration">
+            <svg viewBox="0 0 24 24">
+                <path d="M19,2L14,6.5V17.5L19,13V2M6.5,5C4.55,5 2.45,5.4 1,6.5V21.16C1,21.41 1.25,21.66 1.5,21.66C1.6,21.66 1.65,21.59 1.75,21.59C3.1,20.94 5.05,20.5 6.5,20.5C8.45,20.5 10.55,20.9 12,22C13.35,21.15 15.8,20.5 17.5,20.5C19.15,20.5 20.85,20.81 22.25,21.56C22.35,21.61 22.4,21.59 22.5,21.59C22.75,21.59 23,21.34 23,21.09V6.5C22.4,6.05 21.75,5.75 21,5.5V19C19.9,18.65 18.7,18.5 17.5,18.5C15.8,18.5 13.35,19.15 12,20V6.5C10.55,5.4 8.45,5 6.5,5Z" fill="currentColor"/>
+            </svg>
+        </div>
+        
+        <h1 class="error-code">404</h1>
+        <h2 class="error-title">Page Not Found</h2>
+        <p class="error-description">
+            Oops! The page you're looking for doesn't exist. It might have been moved or deleted.
+        </p>
+        
+        <div class="error-actions">
+            <a href="/" class="btn btn-primary btn-large">
+                Go to Homepage
+            </a>
+            <button onclick="history.back()" class="btn btn-secondary btn-large">
+                Go Back
+            </button>
+        </div>
+        
+        <div class="popular-pages">
+            <h2>Popular Pages</h2>
+            <div class="popular-links">
+                <a href="/" class="popular-link">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" fill="currentColor"/>
+                    </svg>
+                    <div>
+                        <strong>Homepage</strong>
+                        <div style="font-size: 14px; color: var(--text-secondary);">Get beta access to Gemini Toolbox</div>
+                    </div>
+                </a>
+                
+                <a href="/pdf" class="popular-link">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20M10,19L12,15H9V10H15V15L13,19H10Z" fill="currentColor"/>
+                    </svg>
+                    <div>
+                        <strong>Export to PDF</strong>
+                        <div style="font-size: 14px; color: var(--text-secondary);">Learn how to export Gemini chats</div>
+                    </div>
+                </a>
+                
+                <a href="/delete" class="popular-link">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" fill="currentColor"/>
+                    </svg>
+                    <div>
+                        <strong>Bulk Delete</strong>
+                        <div style="font-size: 14px; color: var(--text-secondary);">Delete multiple chats at once</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Gemini Toolbox. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
