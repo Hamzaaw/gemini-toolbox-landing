@@ -568,6 +568,9 @@ a.stat-card:hover::after {
 
 .proof-badge {
     height: 30px;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .store-link-inline {
