@@ -6,6 +6,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a static marketing website for Gemini Toolbox, a Chrome Extension that unifies multiple Gemini-related tools (PDF export, bulk delete, folders, prompt library). It's built with plain HTML/CSS/JavaScript following Material Design 3 principles - no build process or frameworks.
 
+**Live Site**: https://geminitoolbox.com
+
 ## Development Commands
 
 ```bash
@@ -15,6 +17,12 @@ python3 -m http.server 8000
 # Alternative servers
 npx http-server
 php -S localhost:8000
+
+# Push updates to production
+git add .
+git commit -m "Update description"
+git push
+# Vercel auto-deploys on push to main branch
 ```
 
 ## Architecture & Key Design Decisions
@@ -67,10 +75,26 @@ Each page includes:
 - Bridge pages exist to capture existing extension users and funnel them to the unified solution
 - Email signups are for beta access to the combined toolbox
 - Developer has 5000+ total users across existing extensions
+- Contact email: hamzaw31@gmail.com
 
-## Deployment
+## Form Submissions
 
-No build process required. For deployment:
-- Upload all files as-is to any static host (GitHub Pages, Netlify, etc.)
-- Ensure `/images/` directory is included
-- No server-side requirements unless implementing real email backend
+Email submissions are handled by Getform:
+- Endpoint: https://getform.io/f/broyvwka
+- Submissions include: email, source (gemini-toolbox-beta), timestamp
+- Fallback to localStorage if API fails
+- Form limit: 25 submissions/month on free tier
+
+## Deployment & Infrastructure
+
+**Hosting**: Vercel (auto-deploys from GitHub)
+- Repository: https://github.com/Hamzaaw/gemini-toolbox-landing
+- Production domain: https://geminitoolbox.com
+- Staging URL: https://gemini-toolbox-landing.vercel.app
+
+**DNS**: Cloudflare
+- A Record: geminitoolbox.com → 216.198.79.1 (DNS only, not proxied)
+- CNAME: www → 069763979177e0a1.vercel-dns-017.com (DNS only, not proxied)
+- www.geminitoolbox.com redirects (308) to geminitoolbox.com
+
+**Updates**: Push to main branch triggers auto-deployment via Vercel
