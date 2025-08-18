@@ -43,6 +43,11 @@
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
     
+    <!-- Resource Hints for Performance -->
+    <link rel="preload" href="images/pdf-one-click.png" as="image">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://huzzler.so">
+    
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
@@ -106,6 +111,28 @@
                     "@type": "Answer",
                     "text": "Absolutely. Code blocks maintain their formatting, indentation, and structure. While syntax highlighting appears in the browser, the PDF preserves the code in a clean, readable format."
                 }
+            }
+        ]
+    }
+    </script>
+    
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://geminitoolbox.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Export to PDF Guide",
+                "item": "https://geminitoolbox.com/pdf"
             }
         ]
     }
@@ -223,6 +250,21 @@
     </style>
 </head>
 <body>
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                    <a href="/" class="breadcrumb-link">Home</a>
+                    <span class="breadcrumb-separator">/</span>
+                </li>
+                <li class="breadcrumb-item">
+                    <span class="breadcrumb-current">Export to PDF Guide</span>
+                </li>
+            </ol>
+        </div>
+    </nav>
+    
     <!-- Bridge Hero Section -->
     <section class="bridge-hero">
         <div class="container">

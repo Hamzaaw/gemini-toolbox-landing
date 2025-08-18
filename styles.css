@@ -657,6 +657,49 @@ a.stat-card:hover::after {
     line-height: 1.6;
 }
 
+/* Breadcrumb Navigation */
+.breadcrumb {
+    padding: 12px 0;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+.breadcrumb-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.breadcrumb-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.breadcrumb-link:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.breadcrumb-separator {
+    color: var(--text-secondary);
+    opacity: 0.5;
+}
+
+.breadcrumb-current {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
 /* Footer */
 .footer {
     padding: 32px 0;
