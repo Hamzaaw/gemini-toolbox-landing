@@ -70,6 +70,12 @@
       ]
     }
   ],
+  "rewrites": [
+    { "source": "/pdf", "destination": "/pdf.html" },
+    { "source": "/delete", "destination": "/delete.html" },
+    { "source": "/privacy", "destination": "/privacy.html" },
+    { "source": "/terms", "destination": "/terms.html" }
+  ],
   "redirects": [
     {
       "source": "/",
