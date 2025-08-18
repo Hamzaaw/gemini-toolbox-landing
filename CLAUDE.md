@@ -80,8 +80,8 @@ Each page includes:
 ## Form Submissions
 
 Email submissions are handled by Getform:
-- Endpoint: https://getform.io/f/broyvwka
-- Submissions include: email, source (gemini-toolbox-beta), timestamp
+- Check script.js for endpoint configuration
+- Submissions include: email, source, timestamp
 - Fallback to localStorage if API fails
 - Form limit: 25 submissions/month on free tier
 
