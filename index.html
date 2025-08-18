@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Toolbox - Ultimate Chrome Extension for Gemini</title>
+    <meta name="description" content="Get early access to the all-in-one Gemini Toolbox Chrome Extension. Features chat folders, PDF exports, bulk deletion, and voice modes. Join the free beta!">
+    <meta name="keywords" content="Gemini Toolbox, Chrome Extension, Gemini PDF, Gemini Bulk Delete, Chat Folders, Voice Modes">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gemini Toolbox - Ultimate Chrome Extension for Gemini">
+    <meta property="og:description" content="Stop juggling separate tools. Get folders, PDF exports, bulk deletion, and more—all in one powerful extension.">
+    <meta property="og:url" content="https://geminitoolbox.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gemini Toolbox - Ultimate Chrome Extension">
+    <meta name="twitter:description" content="Get early access to the all-in-one Gemini Toolbox Chrome Extension. Join the free beta!">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <h1 class="hero-title">
+                Gemini Toolbox
+            </h1>
+            <p class="hero-subtitle">
+                The all-in-one Chrome extension for Gemini. Organize with folders, export PDFs, bulk delete, and more. Free beta access.
+            </p>
+            
+            <!-- Product Visual Slideshow -->
+            <div class="product-visual">
+                <div class="slideshow-container">
+                    <div class="slide fade active">
+                        <img src="images/slide1.png" alt="Gemini Toolbox Interface">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/slide2.png" alt="Gemini with Toolbox Sidebar">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/slide3.png" alt="Smart Folder Organization">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/slide4.png" alt="Bulk Delete Feature">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/slide5.png" alt="Prompt Library">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/slide6.png" alt="Export to PDF">
+                    </div>
+                    
+                    <!-- Navigation dots -->
+                    <div class="dots-container">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                        <span class="dot" data-slide="4"></span>
+                        <span class="dot" data-slide="5"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <form id="hero-email-form" class="email-form">
+                <input 
+                    type="email" 
+                    placeholder="Enter your email address" 
+                    class="email-input"
+                    autocomplete="email"
+                    required
+                >
+                <button type="submit" class="btn btn-primary btn-large">
+                    Get Free Beta Access
+                </button>
+            </form>
+            <div id="hero-form-message" class="form-message"></div>
+            
+            <div class="trust-bar">
+                <div class="trust-stat">
+                    <strong>5,000+</strong> users trust our extensions
+                </div>
+                <div class="trust-divider">•</div>
+                <div class="trust-stat">
+                    <span class="stars-inline">★★★★★</span>
+                    <span>4.7+ avg rating</span>
+                </div>
+                <div class="trust-divider">•</div>
+                <div class="trust-stat">
+                    <img src="http://huzzler.so/assets/images/embeddable-badges/launch_arena_first_place.png" 
+                         alt="Award" 
+                         style="height: 20px; opacity: 0.8; vertical-align: middle;">
+                    Award-winning developer
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Everything You Need in One Place</h2>
+            <p class="section-subtitle">
+                All the essential features to supercharge your Gemini experience, 
+                seamlessly integrated into a single extension.
+            </p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M10 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2h-8l-2-2z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Stay Organized with Folders</h3>
+                    <p>Group chats by project so research and drafts aren't scattered.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20M10,19L12,15H9V10H15V15L13,19H10Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Export Clean PDFs</h3>
+                    <p>Share client-ready threads with clickable links and proper headings.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Clean Up in Seconds</h3>
+                    <p>Select and bulk delete old chats with one pass—no more one-by-one.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 14h-3v3h-2v-3H8v-2h3v-3h2v3h3v2zm-3-7V3.5L18.5 9H13z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Save Time with Prompt Library</h3>
+                    <p>Save your best prompts, organize by category, and insert with one click.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & Privacy Section -->
+    <section id="security" class="security-section">
+        <div class="container">
+            <h2 class="section-title">Security & Privacy First</h2>
+            <div class="security-grid">
+                <div class="security-item">
+                    <svg viewBox="0 0 24 24" class="security-icon">
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" fill="currentColor"/>
+                    </svg>
+                    <h3>Minimal Permissions</h3>
+                    <p>Only requests access to gemini.google.com</p>
+                </div>
+                <div class="security-item">
+                    <svg viewBox="0 0 24 24" class="security-icon">
+                        <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" fill="currentColor"/>
+                    </svg>
+                    <h3>No Data Storage</h3>
+                    <p>Your chats never leave your browser</p>
+                </div>
+                <div class="security-item">
+                    <svg viewBox="0 0 24 24" class="security-icon">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+                    </svg>
+                    <h3>Independent Developer</h3>
+                    <p>Not affiliated with Google or Alphabet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary>How do I export Gemini chat to PDF?</summary>
+                    <p>Install Gemini Toolbox and click the "Export Chat" button that appears in your Gemini sidebar. Select the chats you want to export and click "Export to PDF". Your chats will be formatted as clean, professional PDFs with clickable links and proper formatting.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How to delete multiple chats on Gemini at once?</summary>
+                    <p>With Gemini Toolbox, click "Bulk Delete" in the sidebar, select multiple chats using checkboxes (or "Select All"), then click "Delete Selected". You can delete dozens or hundreds of chats in seconds instead of one-by-one.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How to add folders to organize Gemini chats?</summary>
+                    <p>After installing Gemini Toolbox, click "Manage Folders" in the sidebar. Create custom folders like "Work", "Personal", or "Research", then drag and drop your chats to organize them. You can also search within folders and hide foldered chats from the main view.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How to save and manage prompts in Gemini?</summary>
+                    <p>Gemini Toolbox includes a Prompt Library feature. Click "Prompt Library" in the sidebar to save your best prompts, organize them by category (Writing, Research, Coding, etc.), and insert them with one click. Perfect for reusing complex prompts.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Is Gemini Toolbox safe and does it store my data?</summary>
+                    <p>Yes, it's completely safe. All processing happens locally in your browser. We never see, store, or transmit your chat content. The extension only runs on gemini.google.com and requires minimal permissions. Your privacy is guaranteed.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How to export all Gemini chats at once?</summary>
+                    <p>Gemini Toolbox lets you export multiple chats to PDF in one go. Click "Export Chat" in the sidebar, use "Select All" to choose all your chats, then export them as a single PDF or multiple files. Perfect for backing up your entire chat history.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Can I customize PDF exports from Gemini?</summary>
+                    <p>Yes! Gemini Toolbox exports clean, formatted PDFs with proper headings, clickable links, and code blocks preserved. The PDFs are professional enough to share with clients or save for documentation. Each chat maintains its original formatting and structure.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compressed Social Proof -->
+    <section id="social-proof" class="social-proof-compact">
+        <div class="container">
+            <div class="proof-strip">
+                <div class="proof-item">
+                    <img src="http://huzzler.so/assets/images/embeddable-badges/launch_arena_first_place.png" 
+                         alt="Award" class="proof-badge">
+                    <strong>Gemini to PDF</strong>
+                    <span class="stars-inline">★★★★★</span> 4.7 (20+ reviews)
+                    <a href="https://chromewebstore.google.com/detail/gemini-to-pdf/blndbnmpkgfoopgmcejnhdnepfejgipe" 
+                       target="_blank" class="store-link-inline">View on Chrome Store →</a>
+                </div>
+                <div class="proof-item">
+                    <img src="http://huzzler.so/assets/images/embeddable-badges/launch_arena_first_place.png" 
+                         alt="Award" class="proof-badge">
+                    <strong>Gemini Bulk Delete</strong>
+                    <span class="stars-inline">★★★★★</span> 4.7 (20+ reviews)
+                    <a href="https://chromewebstore.google.com/detail/gemini-bulk-delete/bdbdcppgiiidaolmadifdlceedoojpfh" 
+                       target="_blank" class="store-link-inline">View on Chrome Store →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="final-cta" class="final-cta">
+        <div class="container">
+            <h2 class="section-title">Ready to Transform Your Gemini Experience?</h2>
+            <p class="section-subtitle">
+                Join thousands of users who are already enhancing their AI workflow. 
+                Get early access to all premium features completely free during our beta.
+            </p>
+            
+            <form id="final-email-form" class="email-form">
+                <input 
+                    type="email" 
+                    placeholder="Enter your email address" 
+                    class="email-input"
+                    required
+                >
+                <button type="submit" class="btn btn-primary btn-large">
+                    Get Free Beta Access Now
+                </button>
+            </form>
+            <div id="final-form-message" class="form-message"></div>
+            
+            <div class="trust-signals">
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24" class="trust-icon">
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" fill="currentColor"/>
+                    </svg>
+                    100% Privacy Guaranteed
+                </div>
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24" class="trust-icon">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+                    </svg>
+                    No Spam Ever
+                </div>
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24" class="trust-icon">
+                        <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z" fill="currentColor"/>
+                    </svg>
+                    Limited Beta Spots
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Gemini Toolbox. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
