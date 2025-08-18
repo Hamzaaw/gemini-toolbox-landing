@@ -70,6 +70,7 @@
       ]
     }
   ],
+  "trailingSlash": false,
   "rewrites": [
     { "source": "/pdf", "destination": "/pdf.html" },
     { "source": "/delete", "destination": "/delete.html" },
@@ -77,6 +78,26 @@
     { "source": "/terms", "destination": "/terms.html" }
   ],
   "redirects": [
+    {
+      "source": "/pdf/",
+      "destination": "/pdf",
+      "permanent": true
+    },
+    {
+      "source": "/delete/",
+      "destination": "/delete",
+      "permanent": true
+    },
+    {
+      "source": "/privacy/",
+      "destination": "/privacy",
+      "permanent": true
+    },
+    {
+      "source": "/terms/",
+      "destination": "/terms",
+      "permanent": true
+    },
     {
       "source": "/",
       "has": [
