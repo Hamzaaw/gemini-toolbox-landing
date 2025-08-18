@@ -17,6 +17,9 @@
 .env
 *.local
 
+# Claude guidance file (local only)
+CLAUDE.md
+
 # Temporary files
 *.tmp
 temp/
