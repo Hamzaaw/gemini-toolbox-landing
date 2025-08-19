@@ -79,6 +79,26 @@
   ],
   "redirects": [
     {
+      "source": "/pdf.html",
+      "destination": "/pdf",
+      "permanent": true
+    },
+    {
+      "source": "/delete.html",
+      "destination": "/delete",
+      "permanent": true
+    },
+    {
+      "source": "/privacy.html",
+      "destination": "/privacy",
+      "permanent": true
+    },
+    {
+      "source": "/terms.html",
+      "destination": "/terms",
+      "permanent": true
+    },
+    {
       "source": "/pdf/",
       "destination": "/pdf",
       "permanent": true
