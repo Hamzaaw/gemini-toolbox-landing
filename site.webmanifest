@@ -1,0 +1,22 @@
+{
+  "name": "Gemini Toolbox",
+  "short_name": "Gemini Toolbox",
+  "description": "All-in-one Chrome extension for Gemini. Features chat folders, PDF exports, bulk deletion, and voice modes.",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#4285F4",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}
