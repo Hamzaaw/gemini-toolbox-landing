@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Simulate API call (replace with actual API endpoint)
         submitToAPI(email)
             .then(() => {
-                showMessage(messageDiv, '🎉 Success! Check your email to confirm your spot in the beta.', 'success');
+                showMessage(messageDiv, '🎉 Success! You\'re on the list! We\'ll notify you when beta access is ready.', 'success');
                 emailInput.value = '';
             })
             .catch(() => {
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
         formData.append('_gotcha', ''); // Honeypot field for spam prevention
         
         try {
-            const response = await fetch('https://getform.io/f/broyvwka', {
+            const response = await fetch('https://getform.io/f/aqoemxna', {
                 method: 'POST',
                 body: formData,
                 headers: {
