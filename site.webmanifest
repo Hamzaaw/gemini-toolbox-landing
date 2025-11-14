@@ -1,7 +1,7 @@
 {
-  "name": "Gemini Toolbox",
-  "short_name": "Gemini Toolbox",
-  "description": "All-in-one Chrome extension for Gemini. Features chat folders, PDF exports, bulk deletion, and voice modes.",
+  "name": "Toolbox for Gemini",
+  "short_name": "Toolbox for Gemini",
+  "description": "All-in-one Chrome extension for Gemini. Features chat folders, PDF exports, bulk deletion, and voice modes. Not affiliated with or endorsed by Google LLC.",
   "icons": [
     {
       "src": "/favicon-192x192.png",

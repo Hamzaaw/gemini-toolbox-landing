@@ -119,15 +119,15 @@
       "permanent": true
     },
     {
-      "source": "/",
+      "source": "/(.*)",
       "has": [
         {
           "type": "host",
-          "value": "www.geminitoolbox.com"
+          "value": "www.toolboxforgemini.com"
         }
       ],
-      "destination": "https://geminitoolbox.com",
-      "permanent": false
+      "destination": "https://toolboxforgemini.com/$1",
+      "permanent": true
     }
   ]
 }
