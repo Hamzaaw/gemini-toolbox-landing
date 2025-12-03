@@ -193,6 +193,25 @@
     }
     </script>
     
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://browserlab.io"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Toolbox for Gemini",
+            "item": "https://browserlab.io/toolbox-for-gemini"
+        }]
+    }
+    </script>
+    
     <!-- Register Service Worker -->
     <script>
         if ('serviceWorker' in navigator) {
