@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy YouTube Transcript in 1 Click | Free Chrome Extension</title>
+    <meta name="description" content="Copy YouTube video transcripts instantly. One-click copying, clean formatting, works with Shorts. 4.9★ rating, 10,000+ users. Free Chrome extension.">
+    <meta name="keywords" content="copy youtube transcript, youtube transcript copier, download youtube captions, youtube subtitle extractor, copy video transcript, youtube transcript extension, get youtube transcript">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://browserlab.io/transcript-for-youtube">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="author" content="BrowserLab">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="theme-color" content="#FF0000">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Copy YouTube Transcript - One Click Chrome Extension">
+    <meta property="og:description" content="Copy YouTube video transcripts instantly with one click. Clean formatting, works with Shorts.">
+    <meta property="og:url" content="https://browserlab.io/transcript-for-youtube">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://browserlab.io/images/youtube/yt-screenshot-1.jpg">
+    <meta property="og:site_name" content="BrowserLab">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Copy YouTube Transcript - One Click">
+    <meta name="twitter:description" content="Copy YouTube transcripts instantly. Free Chrome extension.">
+    <meta name="twitter:image" content="https://browserlab.io/images/youtube/yt-screenshot-1.jpg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Resource Hints -->
+    <link rel="preload" href="images/youtube/yt-screenshot-1.jpg" as="image">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Copy YouTube Transcript",
+        "description": "Copy YouTube video transcripts with one click. Clean formatting, works with regular videos and Shorts.",
+        "applicationCategory": "BrowserApplication",
+        "operatingSystem": "Chrome",
+        "isAccessibleForFree": true,
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "85",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "BrowserLab",
+            "url": "https://browserlab.io"
+        }
+    }
+    </script>
+    
+    <!-- HowTo Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Copy YouTube Transcript",
+        "description": "Copy any YouTube video transcript in seconds with this simple process.",
+        "image": "https://browserlab.io/images/youtube/yt-screenshot-1.jpg",
+        "totalTime": "PT30S",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "Install the Extension",
+                "text": "Add Copy YouTube Transcript from the Chrome Web Store. Takes 10 seconds."
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Open a YouTube Video",
+                "text": "Navigate to any YouTube video that has captions available."
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Click Copy",
+                "text": "Click the extension icon and hit 'Copy to Clipboard'. Done!"
+            }
+        ]
+    }
+    </script>
+    
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How do I copy a YouTube transcript?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Install Copy YouTube Transcript extension, open any YouTube video with captions, click the extension icon, and hit 'Copy to Clipboard'. The entire transcript is copied instantly."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does this work with YouTube Shorts?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! Copy YouTube Transcript works with both regular YouTube videos and Shorts, as long as they have captions available."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I include timestamps in the transcript?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, you can customize the output to include or exclude timestamps, add spacing between lines, and even include the video title."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is this extension free?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, Copy YouTube Transcript is completely free with no ads or tracking. It's lightweight, fast, and respects your privacy."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I use the transcript with AI tools like ChatGPT?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolutely! There's even an optional AI summary prompt feature that formats the transcript perfectly for AI/LLM analysis."
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://browserlab.io/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Copy YouTube Transcript",
+                "item": "https://browserlab.io/transcript-for-youtube"
+            }
+        ]
+    }
+    </script>
+    
+    <style>
+        .bridge-hero {
+            padding: 80px 0;
+            background: linear-gradient(135deg, rgba(255, 0, 0, 0.05) 0%, transparent 40%);
+            text-align: center;
+        }
+        
+        .bridge-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin-top: 48px;
+        }
+        
+        .benefit-card {
+            background: var(--surface);
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+        
+        .benefit-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(255, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+        }
+        
+        .benefit-icon svg {
+            width: 24px;
+            height: 24px;
+            color: #FF0000;
+        }
+        
+        .yt-primary {
+            background: #FF0000 !important;
+        }
+        
+        .yt-primary:hover {
+            background: #CC0000 !important;
+        }
+        
+        @media (max-width: 768px) {
+            .bridge-hero {
+                padding: 40px 0;
+            }
+            
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                    <a href="/" class="breadcrumb-link">Home</a>
+                    <span class="breadcrumb-separator">/</span>
+                </li>
+                <li class="breadcrumb-item">
+                    <span class="breadcrumb-current">Copy YouTube Transcript</span>
+                </li>
+            </ol>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="bridge-hero">
+        <div class="container">
+            <div class="bridge-content">
+                <h1 class="hero-title">
+                    Copy YouTube Transcript
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Copy any YouTube video transcript with one click. Clean formatting, customizable output, works with Shorts. Perfect for students, researchers, and content creators.
+                </p>
+                
+                <!-- Problem → Solution Section -->
+                <div style="background: linear-gradient(135deg, #fff 0%, rgba(255, 0, 0, 0.03) 100%); border: 2px solid rgba(255, 0, 0, 0.15); border-radius: 12px; padding: 24px; margin: 32px auto; max-width: 700px;">
+                    <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 24px; align-items: center;">
+                        <div style="text-align: right;">
+                            <h3 style="color: #d32f2f; font-size: 18px; margin-bottom: 8px;">📝 Need the transcript?</h3>
+                            <p style="color: var(--text-secondary); font-size: 14px;">Manual copying is tedious and messy</p>
+                        </div>
+                        <div style="font-size: 24px; color: #FF0000;">→</div>
+                        <div style="text-align: left;">
+                            <h3 style="color: #2e7d32; font-size: 18px; margin-bottom: 8px;">📋 One click copy</h3>
+                            <p style="color: var(--text-secondary); font-size: 14px;">Clean, formatted, ready to use</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Visual Slideshow -->
+                <div class="product-visual" style="margin: 32px auto;">
+                    <div class="slideshow-container">
+                        <div class="slide fade active">
+                            <img src="images/youtube/yt-screenshot-1.jpg" alt="Copy YouTube Transcript extension - one click transcript copying" width="800" height="450">
+                        </div>
+                        <div class="slide fade">
+                            <img src="images/youtube/yt-screenshot-2.jpg" alt="YouTube transcript with customizable formatting options" width="800" height="450" loading="lazy">
+                        </div>
+                        <div class="slide fade">
+                            <img src="images/youtube/yt-screenshot-3.jpg" alt="Copy YouTube Shorts transcripts instantly" width="800" height="450" loading="lazy">
+                        </div>
+                        
+                        <!-- Navigation dots -->
+                        <div class="dots-container">
+                            <span class="dot active" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Download Button -->
+                <div style="text-align: center; margin: 24px 0;">
+                    <a href="https://chromewebstore.google.com/detail/copy-youtube-transcript/mpfdnefhgmjlbkphfpkiicdaegfanbab" 
+                       target="_blank" rel="noopener"
+                       class="btn btn-primary btn-large yt-primary"
+                       style="display: inline-flex; align-items: center; gap: 8px;">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
+                            <path d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z"/>
+                        </svg>
+                        Add to Chrome - Free
+                    </a>
+                    <p style="margin-top: 12px; color: var(--text-secondary); font-size: 14px;">
+                        <strong>4.9★</strong> rating • <strong>85 reviews</strong> • <strong>10,000+ users</strong>
+                    </p>
+                </div>
+                
+                <div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin: 20px 0; flex-wrap: wrap;">
+                    <a href="https://huzzler.so/products/N7UuYAwSpS/copy-youtube-transcript?utm_source=huzzler_product_website&utm_medium=badge&utm_campaign=badge" 
+                       target="_blank" rel="noopener">
+                        <img alt="Huzzler Launch Arena First Place Winner" 
+                             src="images/huzzler-badge.png" 
+                             style="width: 150px; height: auto; filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));" />
+                    </a>
+                </div>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3>One-Click Copy</h3>
+                        <p>Instantly copy entire transcripts to your clipboard</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3>Works with Shorts</h3>
+                        <p>Regular videos and YouTube Shorts supported</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-10-5z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3>No Ads or Tracking</h3>
+                        <p>Clean, fast, and respects your privacy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How-To Section -->
+    <section style="padding: 60px 0; background: var(--surface-secondary);">
+        <div class="container">
+            <h2 class="section-title">How to Copy a YouTube Transcript</h2>
+            <p class="section-subtitle">
+                Just 3 simple steps
+            </p>
+            
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="display: grid; gap: 32px; margin-top: 48px;">
+                    <div style="display: flex; gap: 24px; align-items: flex-start;">
+                        <div style="width: 48px; height: 48px; background: #FF0000; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: bold; flex-shrink: 0;">1</div>
+                        <div style="flex: 1;">
+                            <h3 style="margin-bottom: 8px;">Install the Extension</h3>
+                            <p style="color: var(--text-secondary);">
+                                Add Copy YouTube Transcript from the Chrome Web Store. Takes 10 seconds, completely free.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; gap: 24px; align-items: flex-start;">
+                        <div style="width: 48px; height: 48px; background: #FF0000; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: bold; flex-shrink: 0;">2</div>
+                        <div style="flex: 1;">
+                            <h3 style="margin-bottom: 8px;">Open Any YouTube Video</h3>
+                            <p style="color: var(--text-secondary);">
+                                Navigate to any YouTube video or Short that has captions/subtitles available.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; gap: 24px; align-items: flex-start;">
+                        <div style="width: 48px; height: 48px; background: #FF0000; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: bold; flex-shrink: 0;">3</div>
+                        <div style="flex: 1;">
+                            <h3 style="margin-bottom: 8px;">Click Copy to Clipboard</h3>
+                            <p style="color: var(--text-secondary);">
+                                Click the extension icon and hit "Copy to Clipboard". The entire transcript is ready to paste anywhere!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section style="padding: 60px 0;">
+        <div class="container">
+            <h2 class="section-title">Powerful Features</h2>
+            
+            <div class="features-grid" style="margin-top: 48px;">
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: rgba(255, 0, 0, 0.1);">
+                        <svg viewBox="0 0 24 24" style="color: #FF0000;">
+                            <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Include/Exclude Timestamps</h3>
+                    <p>Choose whether to include timestamps in your copied transcript</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: rgba(255, 0, 0, 0.1);">
+                        <svg viewBox="0 0 24 24" style="color: #FF0000;">
+                            <path d="M5 4v3h5.5v12h3V7H19V4H5z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Clean Formatting</h3>
+                    <p>Properly formatted output with optional line spacing</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: rgba(255, 0, 0, 0.1);">
+                        <svg viewBox="0 0 24 24" style="color: #FF0000;">
+                            <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>AI-Ready Output</h3>
+                    <p>Optional AI summary prompt for ChatGPT and other LLMs</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: rgba(255, 0, 0, 0.1);">
+                        <svg viewBox="0 0 24 24" style="color: #FF0000;">
+                            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Download as File</h3>
+                    <p>Save transcripts as text files for offline access</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section style="padding: 60px 0; background: var(--surface-secondary);">
+        <div class="container">
+            <h2 class="section-title">Perfect For</h2>
+            
+            <div class="features-grid" style="margin-top: 48px;">
+                <div class="feature-card">
+                    <h3>📚 Students</h3>
+                    <p>Take notes from educational videos and lectures without pausing constantly</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🔬 Researchers</h3>
+                    <p>Analyze video content and extract quotes for papers and reports</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🎬 Content Creators</h3>
+                    <p>Repurpose video content into blogs, social posts, and more</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🤖 AI/LLM Users</h3>
+                    <p>Feed transcripts to ChatGPT, Claude, or other AI tools for analysis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section style="padding: 60px 0;">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-container" style="max-width: 800px; margin: 0 auto;">
+                <details class="faq-item">
+                    <summary>How do I copy a YouTube transcript?</summary>
+                    <p>Install Copy YouTube Transcript extension, open any YouTube video with captions, click the extension icon, and hit "Copy to Clipboard". The entire transcript is copied instantly.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Does this work with YouTube Shorts?</summary>
+                    <p>Yes! Copy YouTube Transcript works with both regular YouTube videos and Shorts, as long as they have captions available.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Can I include timestamps in the transcript?</summary>
+                    <p>Yes, you can customize the output to include or exclude timestamps, add spacing between lines, and even include the video title.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Is this extension free?</summary>
+                    <p>Yes, Copy YouTube Transcript is completely free with no ads or tracking. It's lightweight, fast, and respects your privacy.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Can I use the transcript with AI tools like ChatGPT?</summary>
+                    <p>Absolutely! There's even an optional AI summary prompt feature that formats the transcript perfectly for AI/LLM analysis.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>What if a video doesn't have captions?</summary>
+                    <p>The extension requires videos to have captions/transcripts available on YouTube. Most videos have auto-generated captions, but some may not.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Does it work offline?</summary>
+                    <p>Once loaded, the extension works offline. However, you need internet access to load YouTube videos.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section style="padding: 60px 0; background: linear-gradient(135deg, rgba(255, 0, 0, 0.08) 0%, rgba(255, 0, 0, 0.03) 100%);">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">Ready to Copy YouTube Transcripts?</h2>
+            <p class="section-subtitle">
+                Join 10,000+ users who save time every day
+            </p>
+            
+            <div style="margin-top: 32px;">
+                <a href="https://chromewebstore.google.com/detail/copy-youtube-transcript/mpfdnefhgmjlbkphfpkiicdaegfanbab" 
+                   target="_blank"
+                   rel="noopener"
+                   class="btn btn-primary btn-large yt-primary"
+                   style="display: inline-flex; align-items: center; gap: 8px;">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
+                        <path d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z"/>
+                    </svg>
+                    Add to Chrome - Free
+                </a>
+            </div>
+            
+            <p style="margin-top: 16px; color: var(--text-secondary);">
+                Free forever • No account required • 10,000+ happy users
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 BrowserLab. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="/toolbox-for-gemini">Toolbox for Gemini</a>
+                <a href="/save-chat-for-gemini">Save Chat</a>
+                <a href="/bulk-delete-for-gemini">Bulk Delete</a>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        let ytSlideIndex = 1;
+        
+        function currentSlide(n) {
+            showYtSlides(ytSlideIndex = n);
+        }
+        
+        function showYtSlides(n) {
+            let slides = document.querySelectorAll('.slideshow-container .slide');
+            let dots = document.querySelectorAll('.slideshow-container .dot');
+            
+            if (n > slides.length) { ytSlideIndex = 1 }
+            if (n < 1) { ytSlideIndex = slides.length }
+            
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            if (slides[ytSlideIndex - 1]) {
+                slides[ytSlideIndex - 1].classList.add('active');
+            }
+            if (dots[ytSlideIndex - 1]) {
+                dots[ytSlideIndex - 1].classList.add('active');
+            }
+        }
+        
+        setInterval(() => {
+            ytSlideIndex++;
+            showYtSlides(ytSlideIndex);
+        }, 5000);
+    </script>
+</body>
+</html>

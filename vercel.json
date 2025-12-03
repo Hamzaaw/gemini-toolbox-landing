@@ -75,6 +75,7 @@
     { "source": "/toolbox-for-gemini", "destination": "/toolbox-for-gemini.html" },
     { "source": "/save-chat-for-gemini", "destination": "/save-chat-for-gemini.html" },
     { "source": "/bulk-delete-for-gemini", "destination": "/bulk-delete-for-gemini.html" },
+    { "source": "/transcript-for-youtube", "destination": "/transcript-for-youtube.html" },
     { "source": "/privacy", "destination": "/privacy.html" },
     { "source": "/terms", "destination": "/terms.html" }
   ],
