@@ -1,61 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  
-  <!-- Homepage - Highest Priority -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://toolboxforgemini.com/</loc>
-    <lastmod>2025-01-18</lastmod>
+    <loc>https://browserlab.io/</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://toolboxforgemini.com/images/slide1.png</image:loc>
-      <image:title>Toolbox for Gemini Interface</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://toolboxforgemini.com/images/slide2.png</image:loc>
-      <image:title>Gemini with Toolbox Sidebar</image:title>
-    </image:image>
   </url>
-  
-  <!-- PDF Export Page - High Priority -->
   <url>
-    <loc>https://toolboxforgemini.com/pdf</loc>
-    <lastmod>2025-01-18</lastmod>
+    <loc>https://browserlab.io/toolbox-for-gemini</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://toolboxforgemini.com/images/pdf-one-click.png</image:loc>
-      <image:title>One-Click PDF Export</image:title>
-    </image:image>
   </url>
-  
-  <!-- Bulk Delete Page - High Priority -->
   <url>
-    <loc>https://toolboxforgemini.com/delete</loc>
-    <lastmod>2025-01-18</lastmod>
+    <loc>https://browserlab.io/save-chat-for-gemini</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://toolboxforgemini.com/images/delete-hero.png</image:loc>
-      <image:title>Bulk Delete Feature</image:title>
-    </image:image>
+    <priority>0.8</priority>
   </url>
-  
-  <!-- Privacy Policy - Low Priority -->
   <url>
-    <loc>https://toolboxforgemini.com/privacy</loc>
-    <lastmod>2025-01-18</lastmod>
+    <loc>https://browserlab.io/bulk-delete-for-gemini</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://browserlab.io/privacy</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
-  
-  <!-- Terms of Service - Low Priority -->
   <url>
-    <loc>https://toolboxforgemini.com/terms</loc>
-    <lastmod>2025-01-18</lastmod>
+    <loc>https://browserlab.io/terms</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
-  
 </urlset>

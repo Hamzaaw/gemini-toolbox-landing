@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toolbox for Gemini - Organize, Export & Manage Chats | Freemium Chrome Extension</title>
+    <meta name="description" content="Stop losing Gemini chats. Organize with folders, export to PDF, bulk delete in seconds. Freemium Chrome extension with 5000+ users. Install in 30 seconds.">
+    <meta name="keywords" content="Toolbox for Gemini, Chrome Extension, Gemini PDF, Gemini Bulk Delete, Chat Folders, Voice Modes, export gemini chat, save gemini conversation, gemini chat organizer, gemini productivity tools">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://browserlab.io/toolbox-for-gemini">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="author" content="BrowserLab">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="theme-color" content="#1A73E8">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Toolbox for Gemini - Ultimate Chrome Extension for Gemini">
+    <meta property="og:description" content="Stop juggling separate tools. Get folders, PDF exports, bulk deletion, and more—all in one powerful extension.">
+    <meta property="og:url" content="https://browserlab.io/toolbox-for-gemini">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://browserlab.io/images/slide1.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="BrowserLab">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Toolbox for Gemini - Ultimate Chrome Extension">
+    <meta name="twitter:description" content="Install Toolbox for Gemini. Free plan available • Fast setup.">
+    <meta name="twitter:image" content="https://browserlab.io/images/slide1.png">
+    <meta name="twitter:site" content="@browserlab_io">
+    <meta name="twitter:creator" content="@browserlab_io">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Resource Hints for Performance -->
+    <link rel="preload" href="images/slide1.png" as="image">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://getform.io">
+    <link rel="dns-prefetch" href="https://huzzler.so">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Toolbox for Gemini",
+        "description": "All-in-one Chrome extension for Gemini. Features chat folders, PDF exports, bulk deletion, and voice modes. Not affiliated with or endorsed by Google LLC.",
+        "applicationCategory": "BrowserApplication",
+        "operatingSystem": "Chrome",
+        "isAccessibleForFree": true,
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.7",
+            "ratingCount": "20",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "BrowserLab",
+            "url": "https://browserlab.io"
+        }
+    }
+    </script>
+    
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Why are my Gemini chats so cluttered and hard to manage?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Gemini doesn't have built-in organization features, causing chats to pile up chronologically. Toolbox for Gemini adds a folder system to your sidebar, letting you organize conversations by project, topic, or priority - just like organizing files on your computer."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How can I find old Gemini conversations quickly?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Toolbox for Gemini adds powerful search and organization features. Create custom folders, tag important chats, and use our enhanced search to find any conversation in seconds instead of endless scrolling."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What's the best Gemini chat organizer tool?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Toolbox for Gemini is the most comprehensive organizer available, combining folders, bulk operations, and export features in one extension. With 5000+ users and a 4.7★ rating, it's the trusted solution for managing Gemini conversations."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I organize my existing Gemini chats into folders?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! Toolbox for Gemini works with all your existing chats immediately. After installation, you can drag and drop conversations into custom folders, making years of chat history instantly organized."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I manage multiple Gemini conversations for different projects?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Create dedicated folders for each project, client, or topic. Toolbox for Gemini lets you build unlimited folder hierarchies, color-code them, and switch between projects instantly - turning chaos into a clean workspace."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Will Gemini Toolbox slow down my browser?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No, Toolbox for Gemini is lightweight and optimized for performance. In fact, by helping you delete unnecessary chats and organize your workspace, it actually makes Gemini faster and more responsive."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What productivity tools does Gemini Toolbox include?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Beyond folders, you get PDF export, bulk delete, voice modes, prompt templates, and quick actions. It's like having 5 separate productivity extensions in one, all working seamlessly together."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I backup all my Gemini chats at once?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! Use our bulk export feature to save multiple conversations as PDFs simultaneously. Perfect for backing up important work before Gemini's periodic cleanups or for compliance documentation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is there a free plan?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Toolbox for Gemini offers a free plan with core features. Some advanced features require a Pro upgrade."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I clean up hundreds of old Gemini chats?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our bulk delete feature lets you select and remove multiple chats at once - even hundreds at a time. What would take 15+ minutes manually takes just 30 seconds with Toolbox for Gemini."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does Toolbox for Gemini work with Gemini Advanced/Pro?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, Toolbox for Gemini works seamlessly with all Gemini versions including free, Advanced, and Workspace accounts. Your subscription level doesn't affect any Toolbox features."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What happens to my chats if I uninstall Toolbox for Gemini?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Your chats remain safe in Gemini - we never delete or modify your actual conversations without your explicit action. The organizational structure is preserved in our extension, so reinstalling brings everything back instantly."
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Register Service Worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => console.log('ServiceWorker registered'))
+                    .catch(err => console.log('ServiceWorker registration failed'));
+            });
+        }
+    </script>
+</head>
+<body>
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                    <a href="/" class="breadcrumb-link">Home</a>
+                    <span class="breadcrumb-separator">/</span>
+                </li>
+                <li class="breadcrumb-item">
+                    <span class="breadcrumb-current">Toolbox for Gemini</span>
+                </li>
+            </ol>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <h1 class="hero-title">
+                Toolbox for Gemini
+            </h1>
+            <p class="hero-subtitle">
+                The all-in-one Chrome extension for Gemini. Organize with folders, export PDFs, bulk delete, and more. Free plan available; Pro features optional.
+            </p>
+            <p style="margin-top: 12px; font-size: 14px; color: var(--text-secondary); font-style: italic;">
+                Not affiliated with or endorsed by Google LLC
+            </p>
+            
+            <!-- Product Visual Slideshow -->
+            <div class="product-visual">
+                <div class="slideshow-container">
+                    <div class="slide fade active">
+                        <img src="images/slide1.png" alt="Toolbox for Gemini Chrome Extension - organize Gemini chats with folders, export to PDF, bulk delete conversations" width="800" height="450">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/slide2.png" alt="Gemini chat organizer extension - Toolbox for Gemini showing folder management and productivity tools in sidebar" width="800" height="450" loading="lazy">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/slide3.png" alt="How to organize Gemini conversations - drag and drop chats into custom folders for better management" width="800" height="450" loading="lazy">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/slide4.png" alt="Delete multiple Gemini chats at once - bulk delete feature saves 15+ minutes per cleanup" width="800" height="450" loading="lazy">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/slide5.png" alt="Gemini prompt library - save and organize your best prompts for instant reuse" width="800" height="450" loading="lazy">
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/slide6.png" alt="Export Gemini chat to PDF - preserve formatting, code blocks, and images in clean documents" width="800" height="450" loading="lazy">
+                    </div>
+                    
+                    <!-- Navigation dots -->
+                    <div class="dots-container">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                        <span class="dot" data-slide="4"></span>
+                        <span class="dot" data-slide="5"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-container" style="text-align: center; margin: 40px 0;">
+                <a href="https://chromewebstore.google.com/detail/gemini-toolbox/cbdpdhfnjbkjphmminnkfbeekodlphlp" 
+                   target="_blank"
+                   rel="noopener"
+                   class="btn btn-primary btn-large" 
+                   style="display: inline-flex; align-items: center; gap: 12px; padding: 16px 32px; font-size: 18px; text-decoration: none;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="opacity: 0.9;">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z"/>
+                        <path d="M2 17L12 22L22 17V7L12 12L2 7V17Z"/>
+                    </svg>
+                    Add to Chrome
+                </a>
+                <p style="margin-top: 16px; color: var(--text-secondary); font-size: 14px;">
+                    Works instantly • Free plan available
+                </p>
+            </div>
+            
+            <div class="trust-bar">
+                <div class="trust-stat">
+                    <strong>5,000+</strong> users trust our extensions
+                </div>
+                <div class="trust-divider">•</div>
+                <div class="trust-stat">
+                    <span class="stars-inline">★★★★★</span>
+                    <span>4.7+ avg rating</span>
+                </div>
+                <div class="trust-divider">•</div>
+                <div class="trust-stat">
+                    <img src="images/huzzler-badge.png" 
+                         alt="Huzzler Launch Arena First Place Award" 
+                         style="height: 20px; width: auto; opacity: 0.8; vertical-align: middle;">
+                    Award-winning developer
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem → Solution Section -->
+    <section style="padding: 40px 0;">
+        <div class="container">
+            <div style="background: linear-gradient(135deg, #fff 0%, rgba(26, 115, 232, 0.03) 100%); border: 2px solid rgba(26, 115, 232, 0.15); border-radius: 12px; padding: 24px; margin: 0 auto; max-width: 800px;">
+                <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 24px; align-items: center;">
+                    <div style="text-align: right;">
+                        <h3 style="color: #d32f2f; font-size: 18px; margin-bottom: 8px;">😫 Chat chaos?</h3>
+                        <p style="color: var(--text-secondary); font-size: 14px;">Can't find old conversations, chats piling up</p>
+                    </div>
+                    <div style="font-size: 24px; color: var(--primary);">→</div>
+                    <div style="text-align: left;">
+                        <h3 style="color: #2e7d32; font-size: 18px; margin-bottom: 8px;">✨ Organize with folders</h3>
+                        <p style="color: var(--text-secondary); font-size: 14px;">Find any chat instantly, stay organized</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Time Savings Calculator Section -->
+    <section style="padding: 60px 0; background: linear-gradient(135deg, rgba(26, 115, 232, 0.03) 0%, transparent 100%);">
+        <div class="container">
+            <h2 class="section-title">See How Much Time You'll Save</h2>
+            <p class="section-subtitle">Real time comparisons based on actual user tasks</p>
+            
+            <div style="max-width: 900px; margin: 48px auto; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="background: var(--primary); color: white;">
+                            <th style="padding: 20px; text-align: left; font-weight: 500;">Task</th>
+                            <th style="padding: 20px; text-align: center; font-weight: 500;">Without Toolbox 😫</th>
+                            <th style="padding: 20px; text-align: center; font-weight: 500;">With Toolbox ✨</th>
+                            <th style="padding: 20px; text-align: center; font-weight: 500; background: rgba(255,255,255,0.1);">Time Saved</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 16px 20px; font-weight: 500;">Delete 100 chats</td>
+                            <td style="padding: 16px 20px; text-align: center; color: #d32f2f;">15+ minutes</td>
+                            <td style="padding: 16px 20px; text-align: center; color: #2e7d32; font-weight: 500;">30 seconds</td>
+                            <td style="padding: 16px 20px; text-align: center; background: #e8f5e9; color: #2e7d32; font-weight: bold;">14.5 minutes</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 16px 20px; font-weight: 500;">Find old conversation</td>
+                            <td style="padding: 16px 20px; text-align: center; color: #d32f2f;">2-5 minutes scrolling</td>
+                            <td style="padding: 16px 20px; text-align: center; color: #2e7d32; font-weight: 500;">5 seconds</td>
+                            <td style="padding: 16px 20px; text-align: center; background: #e8f5e9; color: #2e7d32; font-weight: bold;">4+ minutes</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 16px 20px; font-weight: 500;">Export chat to PDF</td>
+                            <td style="padding: 16px 20px; text-align: center; color: #d32f2f;">10 min copy/format</td>
+                            <td style="padding: 16px 20px; text-align: center; color: #2e7d32; font-weight: 500;">2 clicks</td>
+                            <td style="padding: 16px 20px; text-align: center; background: #e8f5e9; color: #2e7d32; font-weight: bold;">9.5 minutes</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 16px 20px; font-weight: 500;">Organize 50 chats</td>
+                            <td style="padding: 16px 20px; text-align: center; color: #d32f2f;">Not possible</td>
+                            <td style="padding: 16px 20px; text-align: center; color: #2e7d32; font-weight: 500;">2 minutes</td>
+                            <td style="padding: 16px 20px; text-align: center; background: #e8f5e9; color: #2e7d32; font-weight: bold;">∞</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 16px 20px; font-weight: 500;">Reuse complex prompt</td>
+                            <td style="padding: 16px 20px; text-align: center; color: #d32f2f;">Search & copy: 3 min</td>
+                            <td style="padding: 16px 20px; text-align: center; color: #2e7d32; font-weight: 500;">1 click</td>
+                            <td style="padding: 16px 20px; text-align: center; background: #e8f5e9; color: #2e7d32; font-weight: bold;">3 minutes</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="padding: 20px; background: linear-gradient(90deg, var(--primary-light) 0%, rgba(26, 115, 232, 0.05) 100%); text-align: center;">
+                    <p style="margin: 0; font-size: 18px; color: var(--text-primary);">
+                        <strong>Total time saved per week:</strong> 
+                        <span style="color: var(--primary); font-size: 24px; font-weight: 700;">2+ hours</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Everything You Need in One Place</h2>
+            <p class="section-subtitle">
+                All the essential features to supercharge your Gemini experience, 
+                seamlessly integrated into a single extension.
+            </p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M10 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2h-8l-2-2z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Stay Organized with Folders</h3>
+                    <p>Group chats by project so research and drafts aren't scattered.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20M10,19L12,15H9V10H15V15L13,19H10Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Export Clean PDFs</h3>
+                    <p>Share client-ready threads with clickable links and proper headings.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Clean Up in Seconds</h3>
+                    <p>Select and bulk delete old chats with one pass—no more one-by-one.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 14h-3v3h-2v-3H8v-2h3v-3h2v3h3v2zm-3-7V3.5L18.5 9H13z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Save Time with Prompt Library</h3>
+                    <p>Save your best prompts, organize by category, and insert with one click.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & Privacy Section -->
+    <section id="security" class="security-section">
+        <div class="container">
+            <h2 class="section-title">Security & Privacy First</h2>
+            <div class="security-grid">
+                <div class="security-item">
+                    <svg viewBox="0 0 24 24" class="security-icon">
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" fill="currentColor"/>
+                    </svg>
+                    <h3>Minimal Permissions</h3>
+                    <p>Only requests access to gemini.google.com</p>
+                </div>
+                <div class="security-item">
+                    <svg viewBox="0 0 24 24" class="security-icon">
+                        <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" fill="currentColor"/>
+                    </svg>
+                    <h3>No Data Storage</h3>
+                    <p>Your chats never leave your browser</p>
+                </div>
+                <div class="security-item">
+                    <svg viewBox="0 0 24 24" class="security-icon">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+                    </svg>
+                    <h3>Independent Developer</h3>
+                    <p>Not affiliated with Google or Alphabet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary>Why are my Gemini chats so cluttered and hard to manage?</summary>
+                    <p>Gemini doesn't have built-in organization features, causing chats to pile up chronologically. Toolbox for Gemini adds a folder system to your sidebar, letting you organize conversations by project, topic, or priority - just like organizing files on your computer.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How can I find old Gemini conversations quickly?</summary>
+                    <p>Toolbox for Gemini adds powerful search and organization features. Create custom folders, tag important chats, and use our enhanced search to find any conversation in seconds instead of endless scrolling.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>What's the best Gemini chat organizer tool?</summary>
+                    <p>Toolbox for Gemini is the most comprehensive organizer available, combining folders, bulk operations, and export features in one extension. With 5000+ users and a 4.7★ rating, it's the trusted solution for managing Gemini conversations.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Can I organize my existing Gemini chats into folders?</summary>
+                    <p>Yes! Toolbox for Gemini works with all your existing chats immediately. After installation, you can drag and drop conversations into custom folders, making years of chat history instantly organized.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How do I manage multiple Gemini conversations for different projects?</summary>
+                    <p>Create dedicated folders for each project, client, or topic. Toolbox for Gemini lets you build unlimited folder hierarchies, color-code them, and switch between projects instantly - turning chaos into a clean workspace.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Will Toolbox for Gemini slow down my browser?</summary>
+                    <p>No, Toolbox for Gemini is lightweight and optimized for performance. In fact, by helping you delete unnecessary chats and organize your workspace, it actually makes Gemini faster and more responsive.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>What productivity tools does Gemini Toolbox include?</summary>
+                    <p>Beyond folders, you get PDF export, bulk delete, voice modes, prompt templates, and quick actions. It's like having 5 separate productivity extensions in one, all working seamlessly together.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Can I backup all my Gemini chats at once?</summary>
+                    <p>Yes! Use our bulk export feature to save multiple conversations as PDFs simultaneously. Perfect for backing up important work before Gemini's periodic cleanups or for compliance documentation.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Is there a free plan?</summary>
+                    <p>Yes. Toolbox for Gemini offers a free plan with core features. Some advanced features require a Pro upgrade.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How do I clean up hundreds of old Gemini chats?</summary>
+                    <p>Our bulk delete feature lets you select and remove multiple chats at once - even hundreds at a time. What would take 15+ minutes manually takes just 30 seconds with Toolbox for Gemini.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Does Toolbox for Gemini work with Gemini Advanced/Pro?</summary>
+                    <p>Yes, Toolbox for Gemini works seamlessly with all Gemini versions including free, Advanced, and Workspace accounts. Your subscription level doesn't affect any Toolbox features.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>What happens to my chats if I uninstall Toolbox for Gemini?</summary>
+                    <p>Your chats remain safe in Gemini - we never delete or modify your actual conversations without your explicit action. The organizational structure is preserved in our extension, so reinstalling brings everything back instantly.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compressed Social Proof -->
+    <section id="social-proof" class="social-proof-compact">
+        <div class="container">
+            <div class="proof-strip">
+                <div class="proof-item">
+                    <img src="images/huzzler-badge.png" 
+                         alt="Huzzler Launch Arena First Place Award" class="proof-badge">
+                    <strong>Gemini to PDF</strong>
+                    <span class="stars-inline">★★★★★</span> 4.7 (20+ reviews)
+                    <a href="https://chromewebstore.google.com/detail/gemini-to-pdf/blndbnmpkgfoopgmcejnhdnepfejgipe" 
+                       target="_blank" rel="noopener" class="store-link-inline">View on Chrome Store →</a>
+                </div>
+                <div class="proof-item">
+                    <img src="images/huzzler-badge.png" 
+                         alt="Huzzler Launch Arena First Place Award" class="proof-badge">
+                    <strong>Gemini Bulk Delete</strong>
+                    <span class="stars-inline">★★★★★</span> 4.7 (20+ reviews)
+                    <a href="https://chromewebstore.google.com/detail/gemini-bulk-delete/bdbdcppgiiidaolmadifdlceedoojpfh" 
+                       target="_blank" rel="noopener" class="store-link-inline">View on Chrome Store →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="final-cta" class="final-cta">
+        <div class="container">
+            <h2 class="section-title">Ready to Transform Your Gemini Experience?</h2>
+            <p class="section-subtitle">
+                Join thousands of users enhancing their AI workflow. Install the extension and start with the free plan.
+            </p>
+            
+            <div class="cta-container" style="text-align: center; margin: 40px 0;">
+                <a href="https://chromewebstore.google.com/detail/gemini-toolbox/cbdpdhfnjbkjphmminnkfbeekodlphlp" 
+                   target="_blank"
+                   rel="noopener"
+                   class="btn btn-primary btn-large" 
+                   style="display: inline-flex; align-items: center; gap: 12px; padding: 16px 32px; font-size: 18px; text-decoration: none;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="opacity: 0.9;">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z"/>
+                        <path d="M2 17L12 22L22 17V7L12 12L2 7V17Z"/>
+                    </svg>
+                    Add to Chrome Now
+                </a>
+                <p style="margin-top: 16px; color: var(--text-secondary); font-size: 14px;">
+                    Works instantly • No sign-up required
+                </p>
+            </div>
+            
+            <div class="trust-signals">
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24" class="trust-icon">
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" fill="currentColor"/>
+                    </svg>
+                    100% Privacy Guaranteed
+                </div>
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24" class="trust-icon">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+                    </svg>
+                    No Spam Ever
+                </div>
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24" class="trust-icon">
+                        <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z" fill="currentColor"/>
+                    </svg>
+                    Works with Gemini
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 BrowserLab. All rights reserved.</p>
+            <p style="font-size: 12px; margin-top: 8px; color: var(--text-secondary);">Not affiliated with or endorsed by Google LLC</p>
+            <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="/save-chat-for-gemini">Export to PDF</a>
+                <a href="/bulk-delete-for-gemini">Bulk Delete</a>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

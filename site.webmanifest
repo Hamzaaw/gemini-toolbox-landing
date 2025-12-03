@@ -1,7 +1,11 @@
 {
-  "name": "Toolbox for Gemini",
-  "short_name": "Toolbox for Gemini",
-  "description": "All-in-one Chrome extension for Gemini. Features chat folders, PDF exports, bulk deletion, and voice modes. Not affiliated with or endorsed by Google LLC.",
+  "name": "BrowserLab",
+  "short_name": "BrowserLab",
+  "description": "Browser extensions that supercharge your AI workflow",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1A73E8",
   "icons": [
     {
       "src": "/favicon-192x192.png",
@@ -13,10 +17,5 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "theme_color": "#4285F4",
-  "background_color": "#ffffff",
-  "display": "standalone",
-  "start_url": "/",
-  "scope": "/"
+  ]
 }

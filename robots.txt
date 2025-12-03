@@ -1,24 +1,10 @@
-# Robots.txt for toolboxforgemini.com
-# Allow all crawlers
+# robots.txt for browserlab.io
 
 User-agent: *
 Allow: /
-Disallow: /api/
-Disallow: /.env
-Disallow: /*.tmp$
 
-# Sitemap location
-Sitemap: https://toolboxforgemini.com/sitemap.xml
+# Sitemap
+Sitemap: https://browserlab.io/sitemap.xml
 
-# Crawl delay for respectful crawling
-Crawl-delay: 1
-
-# Google specific
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 0
-
-# Bing specific
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 0
+# Disallow admin/internal paths (none currently)
+# Disallow: /admin/

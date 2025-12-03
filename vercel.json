@@ -72,20 +72,51 @@
   ],
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/pdf", "destination": "/pdf.html" },
-    { "source": "/delete", "destination": "/delete.html" },
+    { "source": "/toolbox-for-gemini", "destination": "/toolbox-for-gemini.html" },
+    { "source": "/save-chat-for-gemini", "destination": "/save-chat-for-gemini.html" },
+    { "source": "/bulk-delete-for-gemini", "destination": "/bulk-delete-for-gemini.html" },
     { "source": "/privacy", "destination": "/privacy.html" },
     { "source": "/terms", "destination": "/terms.html" }
   ],
   "redirects": [
     {
+      "source": "/pdf",
+      "destination": "/save-chat-for-gemini",
+      "permanent": true
+    },
+    {
+      "source": "/delete",
+      "destination": "/bulk-delete-for-gemini",
+      "permanent": true
+    },
+    {
       "source": "/pdf.html",
-      "destination": "/pdf",
+      "destination": "/save-chat-for-gemini",
       "permanent": true
     },
     {
       "source": "/delete.html",
-      "destination": "/delete",
+      "destination": "/bulk-delete-for-gemini",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/toolbox-for-gemini.html",
+      "destination": "/toolbox-for-gemini",
+      "permanent": true
+    },
+    {
+      "source": "/save-chat-for-gemini.html",
+      "destination": "/save-chat-for-gemini",
+      "permanent": true
+    },
+    {
+      "source": "/bulk-delete-for-gemini.html",
+      "destination": "/bulk-delete-for-gemini",
       "permanent": true
     },
     {
@@ -99,13 +130,18 @@
       "permanent": true
     },
     {
-      "source": "/pdf/",
-      "destination": "/pdf",
+      "source": "/toolbox-for-gemini/",
+      "destination": "/toolbox-for-gemini",
       "permanent": true
     },
     {
-      "source": "/delete/",
-      "destination": "/delete",
+      "source": "/save-chat-for-gemini/",
+      "destination": "/save-chat-for-gemini",
+      "permanent": true
+    },
+    {
+      "source": "/bulk-delete-for-gemini/",
+      "destination": "/bulk-delete-for-gemini",
       "permanent": true
     },
     {
@@ -119,6 +155,38 @@
       "permanent": true
     },
     {
+      "source": "/pdf/",
+      "destination": "/save-chat-for-gemini",
+      "permanent": true
+    },
+    {
+      "source": "/delete/",
+      "destination": "/bulk-delete-for-gemini",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.browserlab.io"
+        }
+      ],
+      "destination": "https://browserlab.io/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "toolboxforgemini.com"
+        }
+      ],
+      "destination": "https://browserlab.io/$1",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [
         {
@@ -126,7 +194,7 @@
           "value": "www.toolboxforgemini.com"
         }
       ],
-      "destination": "https://toolboxforgemini.com/$1",
+      "destination": "https://browserlab.io/$1",
       "permanent": true
     }
   ]
