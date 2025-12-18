@@ -1,6 +1,6 @@
-# Gemini Toolbox - Plain HTML/CSS Landing Page
+# BrowserLab - Plain HTML/CSS Landing Page
 
-A clean, fast, and responsive pre-launch website for the Gemini Toolbox Chrome Extension built with plain HTML, CSS, and vanilla JavaScript. No frameworks, no build process, just pure web technologies.
+A clean, fast, and responsive pre-launch website for the BrowserLab Chrome Extension built with plain HTML, CSS, and vanilla JavaScript. No frameworks, no build process, just pure web technologies.
 
 ## Features
 

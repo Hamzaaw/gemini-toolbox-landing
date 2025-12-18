@@ -1,4 +1,4 @@
-// Service Worker for Gemini Toolbox
+// Service Worker for BrowserLab
 const CACHE_NAME = 'gemini-toolbox-v1';
 const urlsToCache = [
   '/',
