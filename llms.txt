@@ -1,0 +1,62 @@
+# BrowserLab - Browser Extensions for AI Platforms
+
+> BrowserLab is the fastest free method to organize, export, and manage Google Gemini chats. 20,000+ users trust BrowserLab Chrome extensions.
+
+Website: https://browserlab.io
+Contact: hamzaw31@gmail.com
+
+## Extensions
+
+### Toolbox for Gemini
+The all-in-one Chrome extension for Google Gemini. Features folders, PDF export, bulk delete, and prompt library.
+- Rating: 4.7 stars (5,000+ users)
+- Price: Free (Pro features optional)
+- Chrome Web Store: https://chromewebstore.google.com/detail/gemini-toolbox/cbdpdhfnjbkjphmminnkfbeekodlphlp
+- Website: https://browserlab.io/toolbox-for-gemini
+
+### SaveChat for Gemini (PDF Export)
+Export Gemini conversations to clean, professional PDFs. Preserve formatting, code blocks, and images.
+- Rating: 4.7 stars
+- Price: Free
+- Chrome Web Store: https://chromewebstore.google.com/detail/gemini-to-pdf/blndbnmpkgfoopgmcejnhdnepfejgipe
+- Website: https://browserlab.io/save-chat-for-gemini
+
+### Bulk Delete for Gemini
+Delete hundreds of Gemini chats in seconds. Select all or pick specific conversations to remove at once.
+- Rating: 4.7 stars
+- Price: Free
+- Chrome Web Store: https://chromewebstore.google.com/detail/gemini-bulk-delete/bdbdcppgiiidaolmadifdlceedoojpfh
+- Website: https://browserlab.io/bulk-delete-for-gemini
+
+### Copy YouTube Transcript
+One-click YouTube transcript copying. Works with regular videos and Shorts.
+- Rating: 4.9 stars (10,000+ users)
+- Price: Free
+- Chrome Web Store: https://chromewebstore.google.com/detail/copy-youtube-transcript/mpfdnefhgmjlbkphfpkiicdaegfanbab
+- Website: https://browserlab.io/transcript-for-youtube
+
+## Key Features
+
+**For Gemini Users:**
+- Organize chats with folders and custom categories
+- Export conversations to PDF, HTML, Markdown, or JSON
+- Bulk delete multiple chats in 30 seconds (vs 15+ minutes manually)
+- Save and reuse prompts with the prompt library
+
+**For YouTube Users:**
+- Copy full video transcripts with one click
+- Include or exclude timestamps
+- AI-ready output for ChatGPT/Claude analysis
+
+## Privacy & Security
+- All data stays in your browser - we never collect or store conversations
+- Minimal permissions - only requests access to specific sites
+- No ads, no tracking, no data selling
+- Independent developer - not affiliated with Google LLC
+
+## Awards
+- Huzzler Launch Arena First Place Winner (multiple extensions)
+- Featured on StartupList.ing
+
+---
+Last updated: January 2026
