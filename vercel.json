@@ -81,6 +81,10 @@
     { "source": "/blog/how-to-export-gemini-chats-to-pdf", "destination": "/blog/how-to-export-gemini-chats-to-pdf.html" },
     { "source": "/blog/best-gemini-chrome-extensions-2026", "destination": "/blog/best-gemini-chrome-extensions-2026.html" },
     { "source": "/blog/how-to-bulk-delete-gemini-chats", "destination": "/blog/how-to-bulk-delete-gemini-chats.html" },
+    { "source": "/blog/gemini-vs-chatgpt-2026", "destination": "/blog/gemini-vs-chatgpt-2026.html" },
+    { "source": "/blog/gemini-tips-and-tricks", "destination": "/blog/gemini-tips-and-tricks.html" },
+    { "source": "/blog/how-to-organize-gemini-chats", "destination": "/blog/how-to-organize-gemini-chats.html" },
+    { "source": "/blog/gemini-for-coding", "destination": "/blog/gemini-for-coding.html" },
     { "source": "/privacy", "destination": "/privacy.html" },
     { "source": "/terms", "destination": "/terms.html" }
   ],
