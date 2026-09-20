@@ -53,6 +53,10 @@ One-click YouTube transcript copying in desktop Chrome. Works with regular video
 - Include or exclude timestamps
 - AI-ready output for ChatGPT/Claude analysis
 
+## Gemini Performance Guide
+
+- Gemini Slow in Long Chats? Fix Typing and Scrolling Lag: https://browserlab.io/blog/gemini-slow-long-chats
+
 ## YouTube Transcript Guides
 
 - How to Copy a YouTube Shorts Transcript: https://browserlab.io/blog/youtube-shorts-transcript

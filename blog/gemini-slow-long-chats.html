@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gemini Slow in Long Chats? Fix Typing and Scrolling Lag | BrowserLab</title>
+<meta name="description" content="Troubleshoot slow Gemini chats in Chrome. Separate typing and scrolling lag from slow answers, try browser checks, and test Gemini Speed Booster.">
+<meta name="author" content="BrowserLab">
+<link rel="canonical" href="https://browserlab.io/blog/gemini-slow-long-chats">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Gemini Slow in Long Chats? Fix Typing and Scrolling Lag">
+<meta property="og:description" content="Troubleshoot slow Gemini chats in Chrome. Separate typing and scrolling lag from slow answers, try browser checks, and test Gemini Speed Booster.">
+<meta property="og:url" content="https://browserlab.io/blog/gemini-slow-long-chats">
+<meta property="og:image" content="https://browserlab.io/images/gemini-speed-booster-logo.png">
+<meta property="og:site_name" content="BrowserLab">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Gemini Slow in Long Chats? Fix Typing and Scrolling Lag">
+<meta name="twitter:description" content="Troubleshoot slow Gemini chats in Chrome. Separate typing and scrolling lag from slow answers, try browser checks, and test Gemini Speed Booster.">
+<meta name="twitter:image" content="https://browserlab.io/images/gemini-speed-booster-logo.png">
+<meta name="theme-color" content="#065fd4">
+<link rel="icon" type="image/png" sizes="120x120" href="/images/gemini-speed-booster-logo.png">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/transcript-guides.v1.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "Gemini Slow in Long Chats? Fix Typing and Scrolling Lag", "description": "Troubleshoot slow Gemini chats in Chrome. Separate typing and scrolling lag from slow answers, try browser checks, and test Gemini Speed Booster.", "image": ["https://browserlab.io/images/gemini-speed-booster-logo.png"], "mainEntityOfPage": "https://browserlab.io/blog/gemini-slow-long-chats", "author": {"@type": "Organization", "name": "BrowserLab", "url": "https://browserlab.io"}, "publisher": {"@type": "Organization", "name": "BrowserLab", "url": "https://browserlab.io"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Gemini Speed Booster", "item": "https://browserlab.io/gemini-speed-booster"}, {"@type": "ListItem", "position": 2, "name": "Gemini Slow in Long Chats? Fix Typing and Scrolling Lag", "item": "https://browserlab.io/blog/gemini-slow-long-chats"}]}]}</script>
+</head>
+<body class="transcript-page">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="guide-nav"><div class="container"><a class="guide-brand" href="/gemini-speed-booster"><img src="/images/gemini-speed-booster-logo.png" alt="" width="32" height="32">Gemini Speed Booster</a><a class="guide-nav-link" href="/blog">All guides</a></div></header>
+<main id="main">
+<section class="guide-hero"><div class="guide-heading">
+<nav class="guide-breadcrumb" aria-label="Breadcrumb"><a href="/gemini-speed-booster">Gemini Speed Booster</a> / Guide</nav>
+<p class="guide-eyebrow">Gemini troubleshooting</p>
+<h1>Gemini Slow in Long Chats? Fix Typing and Scrolling Lag</h1>
+<p class="guide-lead">Letters appearing late? Scrolling getting choppy? Start by identifying which part of Gemini feels slow, then try the steps that match the problem.</p>
+<p class="guide-meta">By BrowserLab · Makers of Gemini Speed Booster · For desktop Chrome</p>
+</div></section>
+<div class="container guide-layout"><article class="guide-article">
+<div class="guide-answer"><p><strong>Start here:</strong> Compare typing and scrolling in a long conversation with a fresh chat. If the long conversation feels worse, page rendering is worth investigating. If typing is smooth but answers arrive slowly, a browser rendering extension may not address the delay. This comparison is a clue, not a diagnosis.</p></div>
+
+<h2 id="identify">1. Identify the kind of slowdown</h2>
+<h3>Typing, clicking or scrolling feels delayed</h3>
+<p>These actions happen in the browser interface. A large conversation can leave more content for the page to manage. Check whether the slowdown continues after Gemini has finished answering, and whether shorter chats feel different.</p>
+<h3>The page feels responsive, but replies take time</h3>
+<p>Waiting for an answer is a different symptom. Browser rendering changes cannot make Gemini generate text faster. The symptom alone does not tell you whether the delay involves your connection, the request or the service.</p>
+<h3>Other tabs are slow too</h3>
+<p>Start with Chrome-wide checks below. If the whole browser struggles, adding a Gemini-specific extension may leave the main issue unresolved.</p>
+
+<h2 id="browser-checks">2. Try the browser checks first</h2>
+<p>Save any unfinished prompt before reloading or restarting. Change one thing at a time so you can tell what helped.</p>
+<ol>
+<li><strong>Update Chrome.</strong> Then return to the same conversation and compare its responsiveness.</li>
+<li><strong>Close unused tabs.</strong> Retest typing and scrolling with fewer tabs open.</li>
+<li><strong>Temporarily disable extensions you do not need.</strong> Use Chrome’s menu → Extensions → Manage Extensions. Turn them back on individually if you need to identify a conflict.</li>
+<li><strong>Inspect resource use.</strong> In Chrome’s menu, open More tools → Task Manager. Look for a tab or extension consuming substantial resources. Save work before ending a process.</li>
+</ol>
+<p>These checks follow <a href="https://support.google.com/chrome/answer/1385029?hl=en">Google’s Chrome performance guidance</a>. They do not require deleting your Gemini conversations.</p>
+<p>If you keep many tabs open, Chrome’s <strong>Settings → Performance → Memory Saver</strong> can deactivate unused tabs to free memory. Those tabs reload when revisited. This manages background tabs; it is different from reducing rendering work inside your active Gemini chat. See <a href="https://support.google.com/chrome/answer/12929150?hl=en">Google’s Memory Saver documentation</a>.</p>
+
+<h2 id="speed-booster">3. Test Speed Booster on the same conversation</h2>
+<p>If the remaining issue is typing or scrolling in a long chat, <a href="/gemini-speed-booster">Gemini Speed Booster</a> is designed for that situation. It optimizes older messages outside your view while keeping them in the conversation. They render fully again as you approach them.</p>
+<ol>
+<li><strong>Establish a baseline.</strong> With Gemini idle, type a short draft without sending it and scroll through the conversation. Note where the delay occurs.</li>
+<li><strong><a href="https://chromewebstore.google.com/detail/gemini-speed-booster/nhcnngifihnlimjkaogmgeomnbndekhf?utm_source=browserlab.io&amp;utm_medium=referral&amp;utm_campaign=gsb_guide_long-chats&amp;utm_content=steps" target="_blank" rel="noopener">Install Gemini Speed Booster</a>.</strong> Open the same conversation in desktop Chrome and repeat those actions.</li>
+<li><strong>Check restoration.</strong> Use <strong>Show full chat</strong> or turn the extension off to restore the complete rendered view. Compare again without changing the conversation or opening more tabs.</li>
+</ol>
+<p>This is a practical check on your own setup, not a speed benchmark. Performance can vary. If there is no useful improvement, leave the extension off and continue investigating other causes.</p>
+
+<h2 id="limits">What it can and cannot change</h2>
+<p>The extension changes how older off-screen content is rendered. It does not delete, rewrite or summarize your messages, and it does not upload or store chat content. Its <a href="https://chromewebstore.google.com/detail/gemini-speed-booster/nhcnngifihnlimjkaogmgeomnbndekhf">store listing</a> describes these behaviors.</p>
+<p>It cannot increase Gemini’s context window, bypass usage limits, resolve server outages or speed up answer generation. A fresh chat can help you compare interface responsiveness, but it also changes the conversation context; it is not an equivalent continuation of your original thread.</p>
+
+<h2 id="still-slow">If Gemini still feels slow</h2>
+<p>Write down whether the issue affects typing, scrolling or waiting for replies; whether it happens in one conversation or many; and whether other sites are affected. Include your Chrome and extension versions when reporting the problem. These details are more useful than a general “Gemini is slow” report.</p>
+<p>If the page behaves unexpectedly with Speed Booster enabled, restore the full chat or disable the extension. Use the developer contact on its store listing to report the issue. Describe the symptoms without sharing private conversation text.</p>
+
+<section class="guide-cta"><h2>Try it on a long Gemini chat</h2><p>Compare typing and scrolling on your own conversation, with a full-chat restoration option.</p><a class="guide-button" href="https://chromewebstore.google.com/detail/gemini-speed-booster/nhcnngifihnlimjkaogmgeomnbndekhf?utm_source=browserlab.io&amp;utm_medium=referral&amp;utm_campaign=gsb_guide_long-chats&amp;utm_content=bottom" target="_blank" rel="noopener">Get Gemini Speed Booster</a><p class="guide-note">Desktop Chrome · Improves browser responsiveness, not AI generation speed</p></section>
+</article>
+<aside class="guide-aside"><nav aria-label="On this page"><strong>On this page</strong><a href="#identify">Identify the slowdown</a><a href="#browser-checks">Browser checks</a><a href="#speed-booster">Test Speed Booster</a><a href="#limits">What it can change</a><a href="#still-slow">If it is still slow</a></nav><strong>Gemini Speed Booster</strong><p>Reduce rendering work in long Gemini conversations while keeping messages intact.</p><a href="/gemini-speed-booster">Explore the extension →</a></aside>
+</div>
+</main>
+<footer class="guide-footer"><div class="container"><p>© 2026 BrowserLab</p><nav aria-label="Footer"><a href="/gemini-speed-booster">Extension</a><a href="/blog">All guides</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></nav></div></footer>
+</body>
+</html>
