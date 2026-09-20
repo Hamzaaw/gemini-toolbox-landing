@@ -93,9 +93,12 @@
     </script>
     
     <style>
+        .footer-links { flex-wrap: wrap; justify-content: center; }
+        .extension-icon { flex-shrink: 0; }
+
         .extensions-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
             gap: 24px;
             margin-top: 48px;
         }
@@ -303,11 +306,27 @@
                     </p>
                 </a>
                 
+                <!-- Gemini Speed Booster -->
+                <a href="/gemini-speed-booster" class="extension-card">
+                    <div class="extension-header">
+                        <div class="extension-icon" style="background: transparent;">
+                            <img src="/images/gemini-speed-booster-logo.png" alt="" width="48" height="48">
+                        </div>
+                        <div>
+                            <h3 class="extension-title">Gemini Speed Booster</h3>
+                            <p class="extension-platform">Smoother long Gemini chats</p>
+                        </div>
+                    </div>
+                    <p class="extension-description">
+                        Reduce typing and scrolling lag in long Gemini conversations. Keeps your messages intact while reducing off-screen rendering work.
+                    </p>
+                </a>
+
                 <!-- YouTube Transcript -->
                 <a href="/transcript-for-youtube" class="extension-card">
                     <div class="extension-header">
                         <div class="extension-icon" style="background: transparent;">
-                            <img src="/images/icon-youtube.png" alt="Copy YouTube Transcript Chrome Extension" width="48" height="48" style="border-radius: 8px;">
+                            <img src="/images/youtube/copy-youtube-transcript-logo.png" alt="Copy YouTube Transcript Chrome Extension" width="48" height="48" style="border-radius: 8px;">
                         </div>
                         <div>
                             <h3 class="extension-title">Copy YouTube Transcript</h3>
@@ -396,6 +415,7 @@
                 <a href="/toolbox-for-gemini">Toolbox for Gemini</a>
                 <a href="/save-chat-for-gemini">Save Chat</a>
                 <a href="/bulk-delete-for-gemini">Bulk Delete</a>
+                <a href="/gemini-speed-booster">Speed Booster</a>
                 <a href="/privacy">Privacy Policy</a>
                 <a href="/terms">Terms of Service</a>
             </div>

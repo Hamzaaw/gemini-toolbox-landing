@@ -87,6 +87,7 @@
     </script>
     
     <style>
+        .footer-links { flex-wrap: wrap; justify-content: center; }
         .blog-hero {
             padding: 60px 0 40px;
             background: linear-gradient(135deg, rgba(26, 115, 232, 0.03) 0%, transparent 40%);
@@ -95,7 +96,7 @@
         
         .blog-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
             gap: 32px;
             margin-top: 48px;
         }
@@ -187,7 +188,7 @@
         <div class="container">
             <h1 class="hero-title">BrowserLab Blog</h1>
             <p class="hero-subtitle">
-                Tips, tutorials, and best practices for getting the most out of AI tools like Google Gemini
+                Practical guides for YouTube transcripts, Google Gemini and BrowserLab extensions
             </p>
         </div>
     </section>
@@ -196,6 +197,14 @@
     <section style="padding: 60px 0;">
         <div class="container">
             <div class="blog-grid">
+                <a href="/blog/gemini-slow-long-chats" class="blog-card"><img src="/images/gemini-speed-booster-logo.png" alt="" width="120" height="120" class="blog-card-image" style="object-fit: contain; padding: 40px; background: var(--primary-light);" loading="lazy"><div class="blog-card-content"><div class="blog-card-meta"><span class="blog-card-category">Gemini</span></div><h2 class="blog-card-title">Gemini Slow in Long Chats? Fix Typing and Scrolling Lag</h2><p class="blog-card-excerpt">Identify the slowdown, try Chrome checks, and test whether Gemini Speed Booster helps your long conversation.</p></div></a>
+
+                <a href="/blog/youtube-shorts-transcript" class="blog-card"><img src="/images/youtube/yt-screenshot-3.jpg" alt="" class="blog-card-image" loading="lazy"><div class="blog-card-content"><div class="blog-card-meta"><span class="blog-card-category">YouTube</span></div><h2 class="blog-card-title">How to Copy a YouTube Shorts Transcript</h2><p class="blog-card-excerpt">Copy the text of a YouTube Short on desktop. Follow the extension steps, check caption availability, and choose whether to keep timestamps.</p></div></a>
+
+                <a href="/blog/copy-youtube-transcript-without-timestamps" class="blog-card"><img src="/images/youtube/yt-screenshot-2.jpg" alt="" class="blog-card-image" loading="lazy"><div class="blog-card-content"><div class="blog-card-meta"><span class="blog-card-category">YouTube</span></div><h2 class="blog-card-title">Copy a YouTube Transcript Without Timestamps</h2><p class="blog-card-excerpt">Copy clean YouTube transcript text with the free extension, or paste an existing transcript into the timestamp remover. Text is processed in your browser.</p></div></a>
+
+                <a href="/blog/youtube-transcript-for-chatgpt" class="blog-card"><img src="/images/youtube/yt-screenshot-1.jpg" alt="" class="blog-card-image" loading="lazy"><div class="blog-card-content"><div class="blog-card-meta"><span class="blog-card-category">YouTube</span></div><h2 class="blog-card-title">Use a YouTube Transcript with ChatGPT or Claude</h2><p class="blog-card-excerpt">Copy a YouTube transcript into ChatGPT or Claude for summaries, study notes and questions. Includes a copyable prompt and advice for long transcripts.</p></div></a>
+
                 <!-- Article: Gemini vs ChatGPT -->
                 <a href="/blog/gemini-vs-chatgpt-2026" class="blog-card">
                     <img src="/favicon-512x512.png" alt="Gemini vs ChatGPT comparison" class="blog-card-image" style="object-fit: contain; padding: 40px; background: var(--primary-light);">

@@ -1,5 +1,5 @@
 // Service Worker for BrowserLab
-const CACHE_NAME = 'gemini-toolbox-v1';
+const CACHE_NAME = 'browserlab-v2';
 const urlsToCache = [
   '/',
   '/styles.css',
@@ -25,6 +25,26 @@ self.addEventListener('install', event => {
 
 // Cache and return requests
 self.addEventListener('fetch', event => {
+  if (event.request.method !== 'GET' || new URL(event.request.url).origin !== self.location.origin) return;
+
+  // Fetch HTML afresh so returning visitors see updated product facts and guides.
+  // Keep a cached copy for offline navigation, rather than serving old HTML forever.
+  if (event.request.mode === 'navigate') {
+    const navigation = fetch(event.request).then(async response => {
+      if (response.ok) {
+        try {
+          const cache = await caches.open(CACHE_NAME);
+          await cache.put(event.request, response.clone());
+        } catch {
+          // Storage can be unavailable or full. Keep the successful network page.
+        }
+      }
+      return response;
+    }).catch(async () => (await caches.match(event.request)) || Response.error());
+    event.respondWith(navigation);
+    return;
+  }
+
   event.respondWith(
     caches.match(event.request)
       .then(response => {
@@ -64,7 +84,7 @@ self.addEventListener('activate', event => {
     caches.keys().then(cacheNames => {
       return Promise.all(
         cacheNames.map(cacheName => {
-          if (cacheWhitelist.indexOf(cacheName) === -1) {
+          if ((cacheName.startsWith('gemini-toolbox-') || cacheName.startsWith('browserlab-')) && cacheWhitelist.indexOf(cacheName) === -1) {
             return caches.delete(cacheName);
           }
         })
