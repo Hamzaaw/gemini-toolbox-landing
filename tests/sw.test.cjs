@@ -4,13 +4,22 @@ const { readFileSync } = require('node:fs');
 const vm = require('node:vm');
 const source = readFileSync(require.resolve('../sw.js'), 'utf8');
 
-function worker(fetch, cached) {
+function worker(fetch, cached, cacheFailure) {
     const handlers = {};
     const writes = [];
     vm.runInNewContext(source, {
         self: { location: { origin: 'https://browserlab.io' }, addEventListener: (name, fn) => { handlers[name] = fn; } },
         URL, Response, fetch, console,
-        caches: { match: async () => cached, open: async () => ({ put: async (request, response) => writes.push(await response.text()) }) }
+        caches: {
+            match: async () => cached,
+            open: async () => {
+                if (cacheFailure === 'open') throw new Error('Storage unavailable');
+                return { put: async (request, response) => {
+                    if (cacheFailure === 'put') throw new Error('Storage full');
+                    writes.push(await response.text());
+                } };
+            }
+        }
     });
     return { handlers, writes };
 }
@@ -29,6 +38,16 @@ test('offline navigation falls back to the cached guide', async () => {
     w.handlers.fetch({ request: { method: 'GET', mode: 'navigate', url: 'https://browserlab.io/blog/youtube-shorts-transcript' }, respondWith: value => { response = value; } });
     assert.equal(await (await response).text(), 'saved guide');
 });
+
+for (const failure of ['open', 'put']) {
+    test(`successful navigation survives cache ${failure} failure`, async () => {
+        const w = worker(async () => new Response('fresh page'), new Response('stale page'), failure);
+        let response;
+        w.handlers.fetch({ request: { method: 'GET', mode: 'navigate', url: 'https://browserlab.io/' }, respondWith: value => { response = value; } });
+        assert.equal(await (await response).text(), 'fresh page');
+        assert.deepEqual(w.writes, []);
+    });
+}
 
 test('HTTP errors do not overwrite a cached page with an error document', async () => {
     const w = worker(async () => new Response('error', { status: 500 }), new Response('saved guide'));

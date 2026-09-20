@@ -32,8 +32,12 @@ self.addEventListener('fetch', event => {
   if (event.request.mode === 'navigate') {
     const navigation = fetch(event.request).then(async response => {
       if (response.ok) {
-        const cache = await caches.open(CACHE_NAME);
-        await cache.put(event.request, response.clone());
+        try {
+          const cache = await caches.open(CACHE_NAME);
+          await cache.put(event.request, response.clone());
+        } catch {
+          // Storage can be unavailable or full. Keep the successful network page.
+        }
       }
       return response;
     }).catch(async () => (await caches.match(event.request)) || Response.error());
