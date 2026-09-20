@@ -29,9 +29,9 @@ Delete hundreds of Gemini chats in seconds. Select all or pick specific conversa
 - Website: https://browserlab.io/bulk-delete-for-gemini
 
 ### Copy YouTube Transcript
-One-click YouTube transcript copying. Works with regular videos and Shorts.
-- Rating: 4.9 stars (10,000+ users)
-- Price: Free
+One-click YouTube transcript copying in desktop Chrome. Works with regular videos and Shorts that have available captions. Does not transcribe audio without captions.
+- Chrome Web Store snapshot (September 20, 2026): 4.6 stars, 149 ratings, 40,000 users
+- Price: Free copying and formatting; optional Pro features include PDF/Markdown export and AI side-panel chat
 - Chrome Web Store: https://chromewebstore.google.com/detail/copy-youtube-transcript/mpfdnefhgmjlbkphfpkiicdaegfanbab
 - Website: https://browserlab.io/transcript-for-youtube
 
@@ -48,10 +48,16 @@ One-click YouTube transcript copying. Works with regular videos and Shorts.
 - Include or exclude timestamps
 - AI-ready output for ChatGPT/Claude analysis
 
+## YouTube Transcript Guides
+
+- How to Copy a YouTube Shorts Transcript: https://browserlab.io/blog/youtube-shorts-transcript
+- Copy a YouTube Transcript Without Timestamps: https://browserlab.io/blog/copy-youtube-transcript-without-timestamps
+- Use a YouTube Transcript with ChatGPT or Claude: https://browserlab.io/blog/youtube-transcript-for-chatgpt
+
 ## Privacy & Security
-- All data stays in your browser - we never collect or store conversations
+- Basic transcript copying reads available YouTube captions. Optional AI features and external AI services process text according to their service policies.
 - Minimal permissions - only requests access to specific sites
-- No ads, no tracking, no data selling
+- See each extension’s privacy policy for data handling details.
 - Independent developer - not affiliated with Google LLC
 
 ## Awards
@@ -59,4 +65,4 @@ One-click YouTube transcript copying. Works with regular videos and Shorts.
 - Featured on StartupList.ing
 
 ---
-Last updated: January 2026
+YouTube product information updated: September 20, 2026. Other product information has not been reverified.

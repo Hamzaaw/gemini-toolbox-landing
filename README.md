@@ -1,5 +1,11 @@
 # BrowserLab - Plain HTML/CSS Landing Page
 
+## Transcript acquisition pages
+
+The Copy YouTube Transcript product page links to guides for Shorts, timestamp removal and AI workflows. Run `python3 scripts/preview.py` for a local preview with clean routes at `http://127.0.0.1:8787/transcript-for-youtube`.
+
+Run `node --test tests/*.test.cjs` for the timestamp-cleaner and service-worker checks. Campaign definitions, measurement limits and the release checklist are in [docs/transcript-growth-pilot.md](docs/transcript-growth-pilot.md).
+
 A clean, fast, and responsive pre-launch website for the BrowserLab Chrome Extension built with plain HTML, CSS, and vanilla JavaScript. No frameworks, no build process, just pure web technologies.
 
 ## Features
