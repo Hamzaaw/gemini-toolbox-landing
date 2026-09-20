@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://browserlab.io/</loc>
-    <lastmod>2025-12-03</lastmod>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -100,6 +100,10 @@
   </url>
   <url>
     <loc>https://browserlab.io/blog/youtube-transcript-for-chatgpt</loc>
+    <lastmod>2026-09-20</lastmod>
+  </url>
+  <url>
+    <loc>https://browserlab.io/gemini-speed-booster</loc>
     <lastmod>2026-09-20</lastmod>
   </url>
 </urlset>

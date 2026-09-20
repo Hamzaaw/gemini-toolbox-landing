@@ -28,6 +28,11 @@ Delete hundreds of Gemini chats in seconds. Select all or pick specific conversa
 - Chrome Web Store: https://chromewebstore.google.com/detail/gemini-bulk-delete/bdbdcppgiiidaolmadifdlceedoojpfh
 - Website: https://browserlab.io/bulk-delete-for-gemini
 
+### Gemini Speed Booster
+Reduces browser-interface lag in long Gemini chats by optimizing rendering of older off-screen messages. Does not delete messages or speed up answer generation.
+- Chrome Web Store: https://chromewebstore.google.com/detail/gemini-speed-booster/nhcnngifihnlimjkaogmgeomnbndekhf
+- Website: https://browserlab.io/gemini-speed-booster
+
 ### Copy YouTube Transcript
 One-click YouTube transcript copying in desktop Chrome. Works with regular videos and Shorts that have available captions. Does not transcribe audio without captions.
 - Chrome Web Store snapshot (September 20, 2026): 4.6 stars, 149 ratings, 40,000 users
@@ -65,4 +70,4 @@ One-click YouTube transcript copying in desktop Chrome. Works with regular video
 - Featured on StartupList.ing
 
 ---
-YouTube product information updated: September 20, 2026. Other product information has not been reverified.
+YouTube and Gemini Speed Booster product information updated: September 20, 2026. Other product information has not been reverified.

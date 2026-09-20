@@ -40,3 +40,9 @@ Run `python3 scripts/preview.py` and open `http://127.0.0.1:8787/transcript-for-
 Run `node --test tests/*.test.cjs` for the timestamp cleaner and service-worker regression checks. The cleaner supports plain transcript timestamps, not subtitle-file conversion. A spoken time at the beginning of a line can look like a timestamp; the UI asks users to review output. Clipboard-denied environments receive selection/manual-copy fallback instructions.
 
 New CSS/JS assets use `.v1` filenames because the site serves assets with immutable caching. Bump the asset filename when changing an already deployed version. HTML navigation in the service worker uses network-first with offline fallback so returning visitors can receive updated content.
+
+## Gemini Speed Booster addition
+
+The homepage also links to `/gemini-speed-booster`. Its two store links use `utm_campaign=gsb_product`, with `utm_content=hero` or `bottom` and the same source/medium convention above. Reporting requires the Speed Booster extension's own connected store analytics property; the Copy YouTube Transcript property will not report these installs.
+
+Copy was checked against the [Speed Booster store listing](https://chromewebstore.google.com/detail/gemini-speed-booster/nhcnngifihnlimjkaogmgeomnbndekhf) on September 20, 2026 (version 0.3.3). It describes browser rendering improvements, not faster AI generation. The supplied logo is used unchanged. No unverified speed benchmarks or review statistics are displayed. Include this clean route and its `.html` redirect in deployment checks.

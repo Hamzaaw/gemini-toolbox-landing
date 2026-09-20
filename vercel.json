@@ -72,6 +72,7 @@
   ],
   "trailingSlash": false,
   "rewrites": [
+    {"source": "/gemini-speed-booster", "destination": "/gemini-speed-booster.html"},
     {"source": "/blog/youtube-shorts-transcript", "destination": "/blog/youtube-shorts-transcript.html"},
     {"source": "/blog/copy-youtube-transcript-without-timestamps", "destination": "/blog/copy-youtube-transcript-without-timestamps.html"},
     {"source": "/blog/youtube-transcript-for-chatgpt", "destination": "/blog/youtube-transcript-for-chatgpt.html"},
@@ -92,6 +93,7 @@
     { "source": "/terms", "destination": "/terms.html" }
   ],
   "redirects": [
+    {"source": "/gemini-speed-booster.html", "destination": "/gemini-speed-booster", "permanent": true},
     {"source": "/transcript-for-youtube.html", "destination": "/transcript-for-youtube", "permanent": true},
     {"source": "/blog/youtube-shorts-transcript.html", "destination": "/blog/youtube-shorts-transcript", "permanent": true},
     {"source": "/blog/copy-youtube-transcript-without-timestamps.html", "destination": "/blog/copy-youtube-transcript-without-timestamps", "permanent": true},
