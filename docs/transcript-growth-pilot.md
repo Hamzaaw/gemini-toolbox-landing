@@ -47,4 +47,10 @@ The homepage also links to `/gemini-speed-booster`. Its two store links use `utm
 
 Copy was checked against the [Speed Booster store listing](https://chromewebstore.google.com/detail/gemini-speed-booster/nhcnngifihnlimjkaogmgeomnbndekhf) on September 20, 2026 (version 0.3.3). It describes browser rendering improvements, not faster AI generation. The supplied logo is used unchanged. No unverified speed benchmarks or review statistics are displayed. Include this clean route and its `.html` redirect in deployment checks.
 
-The linked troubleshooting guide at `/blog/gemini-slow-long-chats` uses `gsb_guide_long-chats` with `steps` and `bottom` placements. It separates interface lag from generation delays, includes an informal same-conversation comparison, and cites official Chrome performance and Memory Saver documentation. No measured speed improvement is claimed. Include its clean route, `.html` redirect and sitemap entry in release checks.
+The linked troubleshooting guide at `/blog/gemini-slow-long-chats` uses `gsb_guide_long-chats` with `steps`, `demo` and `bottom` placements. It separates interface lag from generation delays, includes an informal same-conversation comparison, and cites official Chrome performance and Memory Saver documentation. No measured speed improvement is claimed. Include its clean route, `.html` redirect and sitemap entry in release checks.
+
+## Gemini guide control walkthrough (October 1, 2026)
+
+The guide now includes `images/gemini-speed-booster-controls.v1.png`, an unchanged copy of the existing light popup preview. The original release-asset renderer uses the extension popup HTML with a mocked Chrome status response (246 total messages, 182 optimized). The visible caption explicitly identifies these as example counts, not a performance benchmark. The screenshot contains no customer conversation.
+
+Control labels and behavior were checked against the local v0.3.3 release source: the main toggle enables optimization; Show full chat restores rendering for the session; Rescan this chat clears that restoration state and reapplies optimization. The new install button retains the existing page campaign with `utm_content=demo`. The page title, canonical URL and search description are unchanged. This is an illustrated walkthrough, not a recorded before/after performance test.
