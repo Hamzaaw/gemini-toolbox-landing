@@ -1,6 +1,6 @@
 # BrowserLab - Browser Extensions for AI Platforms
 
-> BrowserLab is the fastest free method to organize, export, and manage Google Gemini chats. 20,000+ users trust BrowserLab Chrome extensions.
+> BrowserLab makes Chrome extensions for copying YouTube transcripts and managing Gemini conversations, plus a free browser-based transcript timestamp cleaner.
 
 Website: https://browserlab.io
 Contact: hamzaw31@gmail.com
@@ -22,9 +22,8 @@ Export Gemini conversations to clean, professional PDFs. Preserve formatting, co
 - Website: https://browserlab.io/save-chat-for-gemini
 
 ### Bulk Delete for Gemini
-Delete hundreds of Gemini chats in seconds. Select all or pick specific conversations to remove at once.
-- Rating: 4.7 stars
-- Price: Free
+Select specific Gemini conversations using checkboxes, or use Select All and review the selection before deleting.
+- Pricing: The store lists in-app purchases; check current options in the extension.
 - Chrome Web Store: https://chromewebstore.google.com/detail/gemini-bulk-delete/bdbdcppgiiidaolmadifdlceedoojpfh
 - Website: https://browserlab.io/bulk-delete-for-gemini
 
@@ -45,13 +44,18 @@ One-click YouTube transcript copying in desktop Chrome. Works with regular video
 **For Gemini Users:**
 - Organize chats with folders and custom categories
 - Export conversations to PDF, HTML, Markdown, or JSON
-- Bulk delete multiple chats in 30 seconds (vs 15+ minutes manually)
+- Select and delete multiple Gemini chats with a confirmation step
 - Save and reuse prompts with the prompt library
 
 **For YouTube Users:**
 - Copy full video transcripts with one click
 - Include or exclude timestamps
 - AI-ready output for ChatGPT/Claude analysis
+
+## Gemini Chat Cleanup Guide
+
+- How to Bulk Delete Gemini Chats (Selected or All): https://browserlab.io/blog/how-to-bulk-delete-gemini-chats
+- Google also provides native Gemini Apps Activity deletion for all activity or a date range.
 
 ## Gemini Performance Guide
 
@@ -74,4 +78,4 @@ One-click YouTube transcript copying in desktop Chrome. Works with regular video
 - Featured on StartupList.ing
 
 ---
-YouTube and Gemini Speed Booster product information updated: September 20, 2026. Other product information has not been reverified.
+YouTube and Gemini Speed Booster product information updated: September 20, 2026. Bulk-delete guide and related descriptions updated: October 4, 2026. Other product information has not been reverified.
