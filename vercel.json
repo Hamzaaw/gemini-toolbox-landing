@@ -94,6 +94,7 @@
     { "source": "/terms", "destination": "/terms.html" }
   ],
   "redirects": [
+    {"source": "/blog/how-to-bulk-delete-gemini-chats.html", "destination": "/blog/how-to-bulk-delete-gemini-chats", "permanent": true},
     {"source": "/blog/gemini-slow-long-chats.html", "destination": "/blog/gemini-slow-long-chats", "permanent": true},
     {"source": "/gemini-speed-booster.html", "destination": "/gemini-speed-booster", "permanent": true},
     {"source": "/transcript-for-youtube.html", "destination": "/transcript-for-youtube", "permanent": true},

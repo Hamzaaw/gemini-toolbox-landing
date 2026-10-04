@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrowserLab - Power Tools for AI Platforms | Chrome Extensions</title>
-    <meta name="description" content="BrowserLab is the fastest free way to organize Gemini chats, export to PDF, and bulk delete conversations. Chrome extensions for AI platforms. 20,000+ users, 4.7★ rating.">
+    <title>BrowserLab — Chrome Extensions for YouTube and Gemini</title>
+    <meta name="description" content="Copy YouTube transcripts, clean transcript text, and manage Gemini conversations. Explore BrowserLab Chrome extensions and practical guides.">
     <meta name="keywords" content="browser extensions, AI tools, Chrome extensions, Gemini tools, Grok tools, YouTube tools, productivity extensions, AI productivity">
     
     <!-- Canonical URL -->
@@ -20,8 +20,8 @@
     <meta name="theme-color" content="#1A73E8">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="BrowserLab - Power Tools for AI Platforms">
-    <meta property="og:description" content="Browser extensions that supercharge your AI workflow. Tools for Gemini, Grok, YouTube & more.">
+    <meta property="og:title" content="BrowserLab — Tools for YouTube and Gemini">
+    <meta property="og:description" content="Copy YouTube transcripts and manage Gemini chats with BrowserLab Chrome extensions.">
     <meta property="og:url" content="https://browserlab.io/">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://browserlab.io/favicon-512x512.png">
@@ -32,8 +32,8 @@
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="BrowserLab - Power Tools for AI Platforms">
-    <meta name="twitter:description" content="Browser extensions that supercharge your AI workflow.">
+    <meta name="twitter:title" content="BrowserLab — Tools for YouTube and Gemini">
+    <meta name="twitter:description" content="Chrome extensions for YouTube and Gemini.">
     <meta name="twitter:image" content="https://browserlab.io/favicon-512x512.png">
     
     <!-- Fonts -->
@@ -57,7 +57,7 @@
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "BrowserLab",
-        "description": "Browser extensions that supercharge your AI workflow. Tools for Gemini, Grok, YouTube and more.",
+        "description": "Chrome extensions for copying YouTube transcripts and managing Gemini conversations.",
         "url": "https://browserlab.io",
         "logo": "https://browserlab.io/favicon-512x512.png",
         "contactPoint": {
@@ -75,7 +75,7 @@
         "@type": "WebSite",
         "name": "BrowserLab",
         "url": "https://browserlab.io",
-        "description": "Browser extensions that supercharge your AI workflow"
+        "description": "Chrome extensions for YouTube and Gemini"
     }
     </script>
     
@@ -93,6 +93,13 @@
     </script>
     
     <style>
+        .home-actions { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 14px; margin-top: 28px; }
+        .home-actions a { display: inline-flex; justify-content: center; padding: 14px 22px; border-radius: 10px; font-weight: 600; text-decoration: none; line-height: 1.4; }
+        .home-actions .home-action-primary { background: #065fd4; color: white; }
+        .home-actions .home-action-secondary { border: 1px solid #b7c8df; color: #065fd4; background: white; }
+        .home-actions a:focus-visible, .home-cleaner-link:focus-visible { outline: 3px solid #065fd4; outline-offset: 4px; }
+        .home-cleaner-note { margin: 18px auto 0; max-width: 600px; color: var(--text-secondary); font-size: 15px; }
+        .home-cleaner-link { color: #065fd4; text-underline-offset: 3px; }
         .footer-links { flex-wrap: wrap; justify-content: center; }
         .extension-icon { flex-shrink: 0; }
 
@@ -223,12 +230,18 @@
                 BrowserLab
             </h1>
             <p class="hero-subtitle" style="font-size: 28px; max-width: 700px; margin: 0 auto 16px;">
-                Power tools for your favorite AI platforms
+                Useful tools for YouTube and Gemini
             </p>
             <p style="color: var(--text-secondary); font-size: 18px; max-width: 600px; margin: 0 auto;">
-                BrowserLab is the fastest free way to organize Gemini chats, export conversations to PDF, and bulk delete in seconds. Trusted by 20,000+ users.
+                Copy YouTube captions into your notes, organize Gemini conversations, or make long chats easier to use. Choose the tool for your task.
             </p>
             
+            <nav class="home-actions" aria-label="Choose a tool">
+                <a class="home-action-primary" href="/transcript-for-youtube">Copy YouTube transcripts</a>
+                <a class="home-action-secondary" href="#extensions">Browse all extensions</a>
+            </nav>
+            <p class="home-cleaner-note">Already have the text? <a class="home-cleaner-link" href="/blog/copy-youtube-transcript-without-timestamps#cleaner">Remove transcript timestamps for free →</a></p>
+
             <div class="trust-bar" style="margin-top: 40px;">
                 <div class="trust-stat">
                     <strong>20,000+</strong> users
@@ -250,7 +263,7 @@
     </section>
 
     <!-- Extensions Grid -->
-    <section style="padding: 60px 0;">
+    <section id="extensions" style="padding: 60px 0;">
         <div class="container">
             <h2 class="section-title">Our Extensions</h2>
             <p class="section-subtitle">
@@ -416,6 +429,8 @@
                 <a href="/save-chat-for-gemini">Save Chat</a>
                 <a href="/bulk-delete-for-gemini">Bulk Delete</a>
                 <a href="/gemini-speed-booster">Speed Booster</a>
+                <a href="/transcript-for-youtube">YouTube Transcript</a>
+                <a href="/blog">Guides</a>
                 <a href="/privacy">Privacy Policy</a>
                 <a href="/terms">Terms of Service</a>
             </div>

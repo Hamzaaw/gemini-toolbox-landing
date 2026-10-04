@@ -1,0 +1,53 @@
+/* Product-page layout and the original transcript format example. */
+.transcript-page .breadcrumb { margin-bottom: 0; border-bottom: 1px solid #e2e8f0; }
+.transcript-hero { padding: 60px 0; background: linear-gradient(145deg, #f5f9ff, #fff 75%); }
+.transcript-hero-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 54px; align-items: center; }
+.transcript-hero-copy { min-width: 0; }
+.transcript-brand { display: flex; align-items: center; gap: 12px; font-size: 15px; font-weight: 600; margin-bottom: 24px; }
+.transcript-brand img { flex-shrink: 0; }
+.transcript-hero h1 { font-size: clamp(34px, 4vw, 49px); line-height: 1.12; letter-spacing: -.035em; margin: 0 0 20px; }
+.transcript-intro { color: var(--muted); font-size: 18px; line-height: 1.7; margin-bottom: 26px; }
+.transcript-page .yt-primary { background: #065fd4; }
+.transcript-page .yt-primary:hover { background: #0550b5; }
+.transcript-page .transcript-install { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 16px 24px; white-space: normal; line-height: 1.4; border-radius: 10px; }
+.transcript-install svg { flex-shrink: 0; }
+.transcript-requirements { color: var(--muted); font-size: 13px; line-height: 1.7; margin-top: 12px; }
+.transcript-cleaner-link { padding: 22px 0; margin: 22px 0 0; border-top: 1px solid #dce5f0; }
+.transcript-cleaner-link a { font-weight: 600; text-underline-offset: 4px; }
+.transcript-cleaner-link span:not([aria-hidden]) { display: block; margin-top: 6px; color: var(--muted); font-size: 13px; }
+.transcript-store-proof { font-size: 14px; color: var(--ink); }
+.transcript-store-proof small { display: block; color: var(--muted); font-size: 11px; margin-top: 5px; }
+.transcript-example { min-width: 0; padding: 28px; background: #fff; border: 1px solid #d3e1f2; border-radius: 18px; box-shadow: 0 12px 38px rgba(27, 59, 106, .07); }
+.transcript-example-eyebrow { color: var(--accent); font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 10px; }
+.transcript-example h2 { font-size: 25px; line-height: 1.25; letter-spacing: -.02em; margin-bottom: 24px; }
+.transcript-example-controls { display: flex; padding: 4px; gap: 4px; background: #eef3f9; border-radius: 9px; margin-bottom: 20px; }
+.transcript-example-controls[hidden], .transcript-example-output[hidden] { display: none; }
+.transcript-example-controls button { flex: 1; font: inherit; font-size: 14px; font-weight: 600; min-height: 44px; padding: 9px 10px; border: 1px solid transparent; border-radius: 6px; color: var(--muted); background: transparent; cursor: pointer; }
+.transcript-example-controls button[aria-pressed="true"] { background: #fff; color: var(--accent); border-color: #d3e1f2; box-shadow: 0 1px 3px #17243810; }
+.transcript-example-output h3 { color: var(--muted); font-size: 12px; font-weight: 500; margin: 18px 0 12px; }
+.transcript-example-output pre { white-space: pre-wrap; overflow-wrap: anywhere; color: var(--ink); background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 18px; font: 14px/1.9 ui-monospace, SFMono-Regular, Consolas, monospace; }
+.transcript-example-output p { color: var(--muted); font-size: 13px; line-height: 1.6; margin-top: 14px; }
+.sample-time { color: #065fd4; }
+.transcript-example-label { color: var(--muted); font-size: 11px; line-height: 1.6; margin-top: 22px; padding-top: 16px; border-top: 1px solid #e2e8f0; }
+.transcript-screenshots { padding: 54px 0; border-top: 1px solid #e2e8f0; }
+.transcript-screenshots .product-visual { max-width: 800px; }
+.transcript-screenshot-note { text-align: center; }
+.transcript-page .footer-links { flex-wrap: wrap; justify-content: center; }
+.transcript-page .footer-links a { white-space: nowrap; }
+@media (max-width: 900px) {
+    .transcript-hero-grid { grid-template-columns: 1fr; gap: 32px; max-width: 680px; }
+    .transcript-hero { padding: 36px 0 44px; }
+    .transcript-hero h1 { max-width: 550px; }
+    .transcript-example { max-width: 100%; }
+}
+@media (max-width: 540px) {
+    .transcript-hero { padding-top: 28px; }
+    .transcript-brand { margin-bottom: 20px; font-size: 14px; }
+    .transcript-intro { font-size: 17px; }
+    .transcript-page .transcript-install { width: 100%; font-size: 16px; padding: 16px; }
+    .transcript-example { padding: 22px; }
+    .transcript-example h2 { font-size: 23px; }
+    .transcript-example-controls button { font-size: 13px; padding: 8px; }
+    .transcript-example-output pre { font-size: 13px; padding: 16px; }
+    .transcript-screenshots { padding: 40px 0; }
+}
