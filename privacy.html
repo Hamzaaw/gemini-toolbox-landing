@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | BrowserLab</title>
-    <meta name="description" content="Learn about BrowserLab's optional website analytics, browser storage, payments and privacy choices.">
+    <meta name="description" content="Learn about BrowserLab's website privacy, browser storage, payments and support.">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://browserlab.io/privacy">
@@ -69,20 +69,18 @@
             margin-bottom: 32px;
         }
     </style>
-    <link rel="stylesheet" href="/site-analytics.v1.css">
-    <script src="/site-analytics.v1.js" defer></script>
+    <script src="/analytics-cleanup.v1.js" defer></script>
 </head>
 <body>
     <div class="legal-content">
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last updated: October 5, 2026</p>
+        <p class="last-updated">Last updated: October 6, 2026</p>
         
         <h2>Information We Collect</h2>
         <p>
             We collect minimal information necessary to provide our service:
         </p>
         <ul>
-            <li>Optional website analytics, collected only after you allow analytics</li>
             <li>Optional contact information if you reach out to support or opt in to updates</li>
             <li>Payment and billing information is handled securely by the payment provider for Pro purchases</li>
         </ul>
@@ -105,29 +103,20 @@
         
         <h2 id="website-analytics">Website Analytics</h2>
         <p>
-            If you allow analytics, browserlab.io uses Google Analytics 4 to understand which sources bring visitors to the website,
-            which pages they visit, and which extension store links they select. These store-link clicks are not installation counts.
-            Google Analytics uses cookies and receives technical information about your visit, such as browser and device information.
-            We do not enable advertising signals or advertising personalization.
+            browserlab.io does not load Google Analytics or set analytics cookies. There is no website analytics consent prompt.
+            We use Google Search Console to review aggregate search impressions and clicks, and separate Chrome Web Store reports
+            to review extension store visits and installations. Store links may include campaign parameters identifying the website page.
+            These parameters do not include transcript text or a visitor identifier.
         </p>
         <p>
-            We do not send pasted transcripts, text entered into website tools, Gemini conversations, contact details,
-            arbitrary URL queries, or URL fragments to Google Analytics. The transcript cleaner processes your text in your browser.
-            Website analytics is separate from the extensions and the Chrome Web Store's own analytics.
-        </p>
-        <p>
-            You can allow or decline analytics when prompted, and change your choice using the Analytics preferences button at the bottom of a page.
-            Declining analytics does not prevent you from using the website. Google is not loaded for website analytics before you allow it.
-            Learn more about <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a>.
+            The transcript cleaner processes your text in your browser. We do not send pasted transcripts or text entered into website tools
+            to an analytics service. Website reporting is separate from the extensions and the Chrome Web Store's own analytics.
         </p>
 
         <h2>Browser Storage and Cookies</h2>
         <p>
-            We save your analytics preference in your browser so you do not have to choose on every page.
-            After you allow analytics, we also keep a limited landing-page and traffic-source record in browser session storage
-            and let Google Analytics use cookies for website measurement. If you turn analytics off, we stop future website analytics,
-            remove that session record, and clear this website property's analytics cookies. Your preference remains saved.
-            We do not use these analytics cookies for advertising.
+            The website no longer saves an analytics preference or landing-page record. When you visit an updated page, a local cleanup script
+            removes the settings and cookies created by the previous website analytics setup. It does not send data or change other browser storage.
         </p>
         
         <h2>Your Rights</h2>
