@@ -13,7 +13,7 @@ All install links use `utm_source=browserlab.io` and `utm_medium=referral`. They
 
 These tags measure store visits and installs attributed to a website page. They **do not establish that Google originally sent the visitor**, uniquely identify a person, establish retention, or prove an incremental install. Reddit can send someone to the same page. A tag can also survive sharing or further store navigation.
 
-No website GA4 measurement ID was present in the repository or supplied for this change. The store property must not be reused as a website property. This release adds no analytics SDK, cookies, visitor IDs, or custom website events. Website visit-to-click conversion rates and original inbound attribution are therefore not yet available. The timestamp cleaner handles text in the browser without sending or persisting it.
+At the September 20 launch, no website GA4 measurement ID was present in the repository or supplied. That release added no analytics SDK, cookies, visitor IDs, or custom website events. The October 5 website measurement setup below supersedes that limitation. Store properties remain separate. The timestamp cleaner handles text in the browser without sending or persisting it.
 
 ## Release checklist
 
@@ -22,7 +22,7 @@ No website GA4 measurement ID was present in the repository or supplied for this
 - Check a tagged store journey and confirm the campaign appears after the reporting delay. Do not count a QA install as organic growth; record the time/campaign if an install test is performed.
 - Record the launch date and an immediately preceding 28-day baseline in the private acquisition report. Keep account analytics exports and business metrics outside this public repository. Different periods and changing traffic require caution.
 - At week 2, check indexing and errors. At week 6, inspect nonbrand query impressions and clicks by new page. At week 12, compare attributed installs, total install trends, and effort spent. These are review intervals, not promises of search results.
-- If a website analytics property is available later, add outbound `store_click` measurement and inbound landing-page/source reporting with appropriate data handling. Never send pasted transcript text or AI prompts as analytics parameters.
+- Website measurement was added October 5 as documented below. Never send pasted transcript text or AI prompts as analytics parameters.
 
 ## Content evidence and maintenance
 
@@ -76,4 +76,23 @@ The four store links on `/bulk-delete-for-gemini` now use the same `browserlab.i
 | Gemini Bulk Delete | `bulk_delete_product` | `hero`, `upgrade-current` |
 | Toolbox for Gemini | `bulk_delete_product_toolbox` | `upgrade`, `bottom` |
 
-Read each campaign in its destination extension's own store analytics property. The guide's direct store links retain `bulk_delete_guide`. Product campaigns identify the page with the store link; they do not establish an earlier guide visit. A visitor can reach the product from the guide, homepage or another source. Measuring that journey requires website analytics, which is not configured here.
+Read each campaign in its destination extension's own store analytics property. The guide's direct store links retain `bulk_delete_guide`. Product campaigns identify the page with the store link; they do not establish an earlier guide visit. The website setup below measures consenting visitors' landing pages and store clicks separately from actual store installations.
+
+## Website source and click measurement (October 5, 2026)
+
+The main website uses its own GA4 web stream (`G-GF94WRMX1Y`) in the BrowserLab website property. It is independent of all Chrome Web Store and other BrowserLab website properties. New website data starts with this release; prior inbound website sources cannot be reconstructed from it.
+
+`site-analytics.v1.js` is included once on every HTML document. Google is loaded only after the visitor allows analytics, and only on the production website. Declining, an ad blocker, offline use, or a failed script must not change page functionality. A visitor can change their choice through Analytics preferences. Advertising consent remains denied, Google advertising signals are disabled, and the stream's enhanced measurement is off.
+
+| Website event | Purpose | Controlled fields |
+|---|---|---|
+| `page_view` | Count measured visits by source and page | Fixed page path/title, sanitized page location/referrer, first landing page |
+| `store_click` | Count clicks to a known extension listing | Extension slug, clean store URL, approved store campaign and placement, page fields |
+
+These clicks are **not installs**. Use website acquisition/landing-page reports for original traffic and click behavior, and each destination's store reports for the `install` event. The two properties cannot identify the same person or join the complete journey. Consenting visitors are a measured subset of website traffic; do not treat a missing event as proof of no visit or install.
+
+The module uses reviewed source, medium, and campaign values, drops all other URL query/hash values, and never reads pasted transcripts, form fields, prompts or clipboard contents. First-page context stays in memory until consent; then a sanitized record is kept in session storage with a 30-minute inactivity limit. The preference uses local storage. Revoking consent stops measurement and removes the session record and this stream's prefixed cookies.
+
+For a Reddit link to the transcript page, use `https://browserlab.io/transcript-for-youtube?utm_source=reddit&utm_medium=social&utm_campaign=cyt_reddit`. Reviewed launch campaigns also include `gsb_reddit`, `bulk_delete_reddit`, and `toolbox_reddit`. Review and add any new campaign value to the module before using it; arbitrary UTM values are intentionally discarded. Preserve all outgoing store campaign tags.
+
+Validate consent before/after Allow, withdrawal, source sanitization, cleaner behavior and mobile layout before release. Use the documented no-advertising [Google CSP origins](https://developers.google.com/tag-platform/security/guides/csp) and [consent configuration](https://developers.google.com/tag-platform/security/guides/consent). Keep account exports and QA timestamps in the private growth records.
