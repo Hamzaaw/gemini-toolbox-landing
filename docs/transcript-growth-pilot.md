@@ -66,3 +66,14 @@ The bulk-delete guide now distinguishes selected-chat deletion through the exten
 Sources checked October 4: [Google's personal-account Gemini Apps Activity guidance](https://support.google.com/gemini/answer/13278892?hl=en) and the [Gemini Bulk Delete listing](https://chromewebstore.google.com/detail/gemini-bulk-delete/bdbdcppgiiidaolmadifdlceedoojpfh). The listing describes multi-select, Select All with auto-scroll, and Delete Selected; it lists in-app purchases. No free quota, performance benchmark or guarantee is inferred from it.
 
 Keep the October 4 search and campaign baseline in the private acquisition records outside this repository. Compare later complete reporting windows for the transcript page, cleaner and bulk-delete guide. Record this release as several coordinated changes, not an isolated A/B test. The Gemini lag guide and its October 1 walkthrough are unchanged. More impressions and installs are the objectives, not guaranteed outcomes.
+
+## Bulk Delete product attribution (October 5, 2026)
+
+The four store links on `/bulk-delete-for-gemini` now use the same `browserlab.io` source and `referral` medium as the guide:
+
+| Destination | Store campaign | Placements (`utm_content`) |
+|---|---|---|
+| Gemini Bulk Delete | `bulk_delete_product` | `hero`, `upgrade-current` |
+| Toolbox for Gemini | `bulk_delete_product_toolbox` | `upgrade`, `bottom` |
+
+Read each campaign in its destination extension's own store analytics property. The guide's direct store links retain `bulk_delete_guide`. Product campaigns identify the page with the store link; they do not establish an earlier guide visit. A visitor can reach the product from the guide, homepage or another source. Measuring that journey requires website analytics, which is not configured here.
