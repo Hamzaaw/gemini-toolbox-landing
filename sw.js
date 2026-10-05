@@ -1,5 +1,5 @@
 // Service Worker for BrowserLab
-const CACHE_NAME = 'browserlab-v2';
+const CACHE_NAME = 'browserlab-v3';
 const urlsToCache = [
   '/',
   '/styles.css',

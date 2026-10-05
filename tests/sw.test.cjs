@@ -4,13 +4,16 @@ const { readFileSync } = require('node:fs');
 const vm = require('node:vm');
 const source = readFileSync(require.resolve('../sw.js'), 'utf8');
 
-function worker(fetch, cached, cacheFailure) {
+function worker(fetch, cached, cacheFailure, cacheNames = []) {
     const handlers = {};
     const writes = [];
+    const deleted = [];
     vm.runInNewContext(source, {
         self: { location: { origin: 'https://browserlab.io' }, addEventListener: (name, fn) => { handlers[name] = fn; } },
         URL, Response, fetch, console,
         caches: {
+            keys: async () => cacheNames,
+            delete: async name => { deleted.push(name); return true; },
             match: async () => cached,
             open: async () => {
                 if (cacheFailure === 'open') throw new Error('Storage unavailable');
@@ -21,8 +24,16 @@ function worker(fetch, cached, cacheFailure) {
             }
         }
     });
-    return { handlers, writes };
+    return { handlers, writes, deleted };
 }
+
+test('activation removes old site caches while preserving current and unrelated caches', async () => {
+    const w = worker(() => {}, undefined, undefined, ['browserlab-v2', 'browserlab-v3', 'gemini-toolbox-v1', 'other-app-cache']);
+    let activation;
+    w.handlers.activate({ waitUntil: value => { activation = value; } });
+    await activation;
+    assert.deepEqual(w.deleted.sort(), ['browserlab-v2', 'gemini-toolbox-v1']);
+});
 
 test('returning visitors receive new HTML rather than a stale cached page', async () => {
     const w = worker(async () => new Response('updated guide'), new Response('old guide'));
